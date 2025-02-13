@@ -61,8 +61,13 @@ const prompt = require("prompt-sync")();
 // let min = totalMin % 60;
 // console.log(`${hour} : ${min}`);
 
-let p = 20;
-let r = 23;
-let t = 60;
-let SI = (p * r * t) / 100;
-console.log(SI);
+// let p = 20;
+// let r = 23;
+// let t = 60;
+// let SI = (p * r * t) / 100;
+// console.log(SI);
+
+let totalDistance = 230;
+let fuelConsumed = 2;
+let average = Math.floor(totalDistance / fuelConsumed);
+console.log(average);
