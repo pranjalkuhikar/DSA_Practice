@@ -19,8 +19,13 @@ const prompt = require("prompt-sync")();
 // console.log(`My name is ${name} and My age is ${age}`);
 
 // -----------------------------------Formula-----------------------------------
-let length = 3;
-let breadth = 2;
-console.log(`Perimeter of Rectangle is ${2 * (length + breadth)} `);
-console.log(`Area of Rectangle id ${length * breadth}`);
+// let length = 3;
+// let breadth = 2;
+// console.log(`Perimeter of Rectangle is ${2 * (length + breadth)} `);
+// console.log(`Area of Rectangle is ${length * breadth}`);
 
+let length = 3;
+let height = 2;
+let width = 5;
+console.log(`Perimeter of Triangle is ${length + width + height} `);
+console.log(`Area of Triangle is ${0.5 * width * height}`);
