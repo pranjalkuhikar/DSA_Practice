@@ -67,7 +67,15 @@ const prompt = require("prompt-sync")();
 // let SI = (p * r * t) / 100;
 // console.log(SI);
 
-let totalDistance = 230;
-let fuelConsumed = 2;
-let average = Math.floor(totalDistance / fuelConsumed);
-console.log(average);
+// let totalDistance = 230;
+// let fuelConsumed = 2;
+// let average = Math.floor(totalDistance / fuelConsumed);
+// console.log(average);
+
+// -----------------------------------Swapping-----------------------------------
+let a = 2;
+let b = 3;
+let temp = a;
+a = b;
+b = temp;
+console.log(a, b);
