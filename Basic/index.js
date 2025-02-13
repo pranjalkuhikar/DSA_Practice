@@ -109,13 +109,20 @@ const prompt = require("prompt-sync")();
 //   console.log("B is Greater Number");
 // }
 
+// let a = 3;
+// let b = 2;
+// let c = 1;
+// if (a > b && a > c) {
+//   console.log("A is Greater Number");
+// } else if (b > a && b > c) {
+//   console.log("B is Greater Number");
+// } else {
+//   console.log("C is Greater Number");
+// }
+
 let a = 3;
-let b = 2;
-let c = 1;
-if (a > b && a > c) {
-  console.log("A is Greater Number");
-} else if (b > a && b > c) {
-  console.log("B is Greater Number");
+if (a > 0) {
+  console.log("Positive Number");
 } else {
-  console.log("C is Greater Number");
+  console.log("Negative Number");
 }
