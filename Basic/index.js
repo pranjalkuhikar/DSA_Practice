@@ -168,3 +168,10 @@ const prompt = require("prompt-sync")();
 //   console.log("Negative and Even");
 // } else if (a < 0 && a % 2 != 0) {
 //   console.log("Negative and Odd");
+
+let age = 18;
+if (age >= 18) {
+  console.log("You are 18 Year Old and Your are Eligible for Voting");
+} else {
+  console.log("You are not 18 Year Old and Your are not Eligible for Voting");
+}
