@@ -94,9 +94,17 @@ const prompt = require("prompt-sync")();
 // let num2 = Number(prompt("Enter the num2 :- "));
 // console.log(`Is num1 and num2 is ${num1 === num2 ? "Equal" : "Not Equal"}`);
 
-let Year = Number(prompt("Enter the Year :- "));
-if (Year % 4 === 0 && (Year % 100 != 0 || Year % 400 === 0)) {
-  console.log("Leap Year");
+// let Year = Number(prompt("Enter the Year :- "));
+// if (Year % 4 === 0 && (Year % 100 != 0 || Year % 400 === 0)) {
+//   console.log("Leap Year");
+// } else {
+//   console.log("Not a Leap Year");
+// }
+
+let a = 3;
+let b = 2;
+if (a > b) {
+  console.log("A is Greater Number");
 } else {
-  console.log("Not a Leap Year");
+  console.log("B is Greater Number");
 }
