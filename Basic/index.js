@@ -35,6 +35,10 @@ const prompt = require("prompt-sync")();
 // console.log(`Perimeter of Circle is ${Math.floor(2 * Math.PI * radius)} `);
 // console.log(`Area of Circle is ${Math.floor(Math.PI * radius * radius)}`);
 
-let temperature = 23;
-let fahrenheit = (temperature * 9) / 5 + 32;
-console.log(fahrenheit);
+// let temperature = 23;
+// let fahrenheit = (temperature * 9) / 5 + 32;
+// console.log(fahrenheit);
+
+let fahrenheit = 73;
+let temperature = ((fahrenheit - 32) * 5) / 9;
+console.log(temperature);
