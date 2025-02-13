@@ -47,6 +47,11 @@ const prompt = require("prompt-sync")();
 // let miles = km * 0.6;
 // console.log(miles);
 
-let miles = 50;
-let km = miles * 1.6;
-console.log(km);
+// let miles = 50;
+// let km = miles * 1.6;
+// console.log(km);
+
+let hour = 2;
+let min = 30;
+let totalMin = hour * 60 + min;
+console.log(totalMin);
