@@ -90,6 +90,13 @@ const prompt = require("prompt-sync")();
 
 // -----------------------------------Condition-----------------------------------
 
-let num1 = Number(prompt("Enter the num1 :-  "));
-let num2 = Number(prompt("Enter the num2 :- "));
-console.log(`Is num1 and num2 is ${num1 === num2 ? "Equal" : "Not Equal"}`);
+// let num1 = Number(prompt("Enter the num1 :-  "));
+// let num2 = Number(prompt("Enter the num2 :- "));
+// console.log(`Is num1 and num2 is ${num1 === num2 ? "Equal" : "Not Equal"}`);
+
+let Year = Number(prompt("Enter the Year :- "));
+if (Year % 4 === 0 && (Year % 100 != 0 || Year % 400 === 0)) {
+  console.log("Leap Year");
+} else {
+  console.log("Not a Leap Year");
+}
