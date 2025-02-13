@@ -81,9 +81,15 @@ const prompt = require("prompt-sync")();
 // b = temp;
 // console.log(a, b);
 
-let a = 2;
-let b = 3;
-a = a + b;
-b = a - b;
-a = a - b;
-console.log(a, b);
+// let a = 2;
+// let b = 3;
+// a = a + b;
+// b = a - b;
+// a = a - b;
+// console.log(a, b);
+
+// -----------------------------------Condition-----------------------------------
+
+let num1 = Number(prompt("Enter the num1 :-  "));
+let num2 = Number(prompt("Enter the num2 :- "));
+console.log(`Is num1 and num2 is ${num1 === num2 ? "Equal" : "Not Equal"}`);
