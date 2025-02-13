@@ -39,6 +39,10 @@ const prompt = require("prompt-sync")();
 // let fahrenheit = (temperature * 9) / 5 + 32;
 // console.log(fahrenheit);
 
-let fahrenheit = 73;
-let temperature = ((fahrenheit - 32) * 5) / 9;
-console.log(temperature);
+// let fahrenheit = 73;
+// let temperature = ((fahrenheit - 32) * 5) / 9;
+// console.log(temperature);
+
+let km = 50;
+let miles = km * 0.6;
+console.log(miles);
