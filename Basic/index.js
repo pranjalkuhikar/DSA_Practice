@@ -127,9 +127,20 @@ const prompt = require("prompt-sync")();
 //   console.log("Negative Number");
 // }
 
-let a = 2;
-if (a % 2 === 0) {
-  console.log("Even Number");
-} else {
-  console.log("Odd Number");
+// let a = 2;
+// if (a % 2 === 0) {
+//   console.log("Even Number");
+// } else {
+//   console.log("Odd Number");
+// }
+
+let a = 6;
+if (a > 0 && a % 2 === 0) {
+  console.log("Positive and Even");
+} else if (a > 0 && a % 2 != 0) {
+  console.log("Positive and Odd");
+} else if (a < 0 && a % 2 === 0) {
+  console.log("Negative and Even");
+} else if (a < 0 && a % 2 != 0) {
+  console.log("Negative and Odd");
 }
