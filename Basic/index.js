@@ -24,8 +24,12 @@ const prompt = require("prompt-sync")();
 // console.log(`Perimeter of Rectangle is ${2 * (length + breadth)} `);
 // console.log(`Area of Rectangle is ${length * breadth}`);
 
-let length = 3;
-let height = 2;
-let width = 5;
-console.log(`Perimeter of Triangle is ${length + width + height} `);
-console.log(`Area of Triangle is ${0.5 * width * height}`);
+// let length = 3;
+// let height = 2;
+// let width = 5;
+// console.log(`Perimeter of Triangle is ${length + width + height} `);
+// console.log(`Area of Triangle is ${0.5 * width * height}`);
+
+let radius = 5;
+console.log(`Perimeter of Circle is ${Math.floor(2 * Math.PI * radius)} `);
+console.log(`Area of Circle is ${Math.floor(Math.PI * radius * radius)}`);
