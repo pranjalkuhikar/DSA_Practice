@@ -73,9 +73,17 @@ const prompt = require("prompt-sync")();
 // console.log(average);
 
 // -----------------------------------Swapping-----------------------------------
+
+// let a = 2;
+// let b = 3;
+// let temp = a;
+// a = b;
+// b = temp;
+// console.log(a, b);
+
 let a = 2;
 let b = 3;
-let temp = a;
-a = b;
-b = temp;
+a = a + b;
+b = a - b;
+a = a - b;
 console.log(a, b);
