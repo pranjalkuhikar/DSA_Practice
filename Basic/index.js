@@ -120,9 +120,16 @@ const prompt = require("prompt-sync")();
 //   console.log("C is Greater Number");
 // }
 
-let a = 3;
-if (a > 0) {
-  console.log("Positive Number");
+// let a = 3;
+// if (a > 0) {
+//   console.log("Positive Number");
+// } else {
+//   console.log("Negative Number");
+// }
+
+let a = 2;
+if (a % 2 === 0) {
+  console.log("Even Number");
 } else {
-  console.log("Negative Number");
+  console.log("Odd Number");
 }
