@@ -56,7 +56,13 @@ const prompt = require("prompt-sync")();
 // let totalMin = hour * 60 + min;
 // console.log(totalMin);
 
-let totalMin = 150;
-let hour = Math.floor(totalMin / 60);
-let min = totalMin % 60;
-console.log(`${hour} : ${min}`);
+// let totalMin = 150;
+// let hour = Math.floor(totalMin / 60);
+// let min = totalMin % 60;
+// console.log(`${hour} : ${min}`);
+
+let p = 20;
+let r = 23;
+let t = 60;
+let SI = (p * r * t) / 100;
+console.log(SI);
