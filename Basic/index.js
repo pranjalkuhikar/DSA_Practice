@@ -43,6 +43,10 @@ const prompt = require("prompt-sync")();
 // let temperature = ((fahrenheit - 32) * 5) / 9;
 // console.log(temperature);
 
-let km = 50;
-let miles = km * 0.6;
-console.log(miles);
+// let km = 50;
+// let miles = km * 0.6;
+// console.log(miles);
+
+let miles = 50;
+let km = miles * 1.6;
+console.log(km);
