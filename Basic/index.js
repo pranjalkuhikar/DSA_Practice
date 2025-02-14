@@ -204,28 +204,39 @@ const prompt = require("prompt-sync")();
 //   console.log("Loss", costPrice - sellingPrice);
 // }
 
-let totalPrice = 15000;
-if (totalPrice <= 5000) {
-  console.log("You Got 0% Discount Your Price is", totalPrice);
-} else if (totalPrice <= 7000) {
-  console.log(
-    "You Got 5% Discount which is",
-    0.05 * totalPrice,
-    "and final amount is",
-    totalPrice - 0.05 * totalPrice
-  );
-} else if (totalPrice <= 9000) {
-  console.log(
-    "You Got 10% Discount which is",
-    0.1 * totalPrice,
-    "and final amount is",
-    totalPrice - 0.1 * totalPrice
-  );
-} else if (totalPrice > 7000) {
-  console.log(
-    "You Got 20% Discount which is",
-    0.2 * totalPrice,
-    "and final amount is",
-    totalPrice - 0.2 * totalPrice
-  );
+// let totalPrice = 15000;
+// if (totalPrice <= 5000) {
+//   console.log("You Got 0% Discount Your Price is", totalPrice);
+// } else if (totalPrice <= 7000) {
+//   console.log(
+//     "You Got 5% Discount which is",
+//     0.05 * totalPrice,
+//     "and final amount is",
+//     totalPrice - 0.05 * totalPrice
+//   );
+// } else if (totalPrice <= 9000) {
+//   console.log(
+//     "You Got 10% Discount which is",
+//     0.1 * totalPrice,
+//     "and final amount is",
+//     totalPrice - 0.1 * totalPrice
+//   );
+// } else if (totalPrice > 7000) {
+//   console.log(
+//     "You Got 20% Discount which is",
+//     0.2 * totalPrice,
+//     "and final amount is",
+//     totalPrice - 0.2 * totalPrice
+//   );
+// }
+
+let unit = 700;
+if (unit <= 100) {
+  console.log(unit * 4.2);
+} else if (unit <= 200) {
+  console.log(100 * 4.2 + (unit - 100) * 6);
+} else if (unit <= 400) {
+  console.log(100 * 4.2 + 100 * 6 + (unit - 200) * 8);
+} else if (unit > 400) {
+  console.log(100 * 4.2 + 100 * 6 + 200 * 8 + (unit - 400) * 13);
 }
