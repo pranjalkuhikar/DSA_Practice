@@ -169,9 +169,29 @@ const prompt = require("prompt-sync")();
 // } else if (a < 0 && a % 2 != 0) {
 //   console.log("Negative and Odd");
 
-let age = 18;
-if (age >= 18) {
-  console.log("You are 18 Year Old and Your are Eligible for Voting");
+// let age = 18;
+// if (age >= 18) {
+//   console.log("You are 18 Year Old and Your are Eligible for Voting");
+// } else {
+//   console.log("You are not 18 Year Old and Your are not Eligible for Voting");
+// }
+
+let maths = Number(prompt("Enter the Maths Marks :- "));
+let sci = Number(prompt("Enter the Science Marks :- "));
+let eng = Number(prompt("Enter the English Marks :- "));
+let hin = Number(prompt("Enter the Hindi Marks :- "));
+let percentage = ((maths + sci + eng + hin) / 400) * 100;
+console.log(percentage);
+if (percentage > 75) {
+  console.log("A Grade");
+} else if (percentage >= 55 && percentage < 75) {
+  console.log("B Grade");
+} else if (percentage >= 55 && percentage < 75) {
+  console.log("C Grade");
+} else if (percentage >= 45 && percentage < 55) {
+  console.log("D Grade");
+} else if (percentage >= 35 && percentage < 45) {
+  console.log("E Grade");
 } else {
-  console.log("You are not 18 Year Old and Your are not Eligible for Voting");
+  console.log("F Grade");
 }
