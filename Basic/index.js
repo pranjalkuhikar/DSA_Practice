@@ -196,10 +196,36 @@ const prompt = require("prompt-sync")();
 //   console.log("F Grade");
 // }
 
-let costPrice = 500;
-let sellingPrice = 300;
-if (sellingPrice > costPrice) {
-  console.log("Profit", sellingPrice - costPrice);
-} else {
-  console.log("Loss", costPrice - sellingPrice);
+// let costPrice = 500;
+// let sellingPrice = 300;
+// if (sellingPrice > costPrice) {
+//   console.log("Profit", sellingPrice - costPrice);
+// } else {
+//   console.log("Loss", costPrice - sellingPrice);
+// }
+
+let totalPrice = 15000;
+if (totalPrice <= 5000) {
+  console.log("You Got 0% Discount Your Price is", totalPrice);
+} else if (totalPrice <= 7000) {
+  console.log(
+    "You Got 5% Discount which is",
+    0.05 * totalPrice,
+    "and final amount is",
+    totalPrice - 0.05 * totalPrice
+  );
+} else if (totalPrice <= 9000) {
+  console.log(
+    "You Got 10% Discount which is",
+    0.1 * totalPrice,
+    "and final amount is",
+    totalPrice - 0.1 * totalPrice
+  );
+} else if (totalPrice > 7000) {
+  console.log(
+    "You Got 20% Discount which is",
+    0.2 * totalPrice,
+    "and final amount is",
+    totalPrice - 0.2 * totalPrice
+  );
 }
