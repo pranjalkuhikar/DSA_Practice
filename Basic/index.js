@@ -176,22 +176,30 @@ const prompt = require("prompt-sync")();
 //   console.log("You are not 18 Year Old and Your are not Eligible for Voting");
 // }
 
-let maths = Number(prompt("Enter the Maths Marks :- "));
-let sci = Number(prompt("Enter the Science Marks :- "));
-let eng = Number(prompt("Enter the English Marks :- "));
-let hin = Number(prompt("Enter the Hindi Marks :- "));
-let percentage = ((maths + sci + eng + hin) / 400) * 100;
-console.log(percentage);
-if (percentage > 75) {
-  console.log("A Grade");
-} else if (percentage >= 55 && percentage < 75) {
-  console.log("B Grade");
-} else if (percentage >= 55 && percentage < 75) {
-  console.log("C Grade");
-} else if (percentage >= 45 && percentage < 55) {
-  console.log("D Grade");
-} else if (percentage >= 35 && percentage < 45) {
-  console.log("E Grade");
+// let maths = Number(prompt("Enter the Maths Marks :- "));
+// let sci = Number(prompt("Enter the Science Marks :- "));
+// let eng = Number(prompt("Enter the English Marks :- "));
+// let hin = Number(prompt("Enter the Hindi Marks :- "));
+// let percentage = ((maths + sci + eng + hin) / 400) * 100;
+// console.log(percentage);
+// if (percentage > 75) {
+//   console.log("A Grade");
+// } else if (percentage >= 55 && percentage < 75) {
+//   console.log("B Grade");
+// } else if (percentage >= 55 && percentage < 75) {
+//   console.log("C Grade");
+// } else if (percentage >= 45 && percentage < 55) {
+//   console.log("D Grade");
+// } else if (percentage >= 35 && percentage < 45) {
+//   console.log("E Grade");
+// } else {
+//   console.log("F Grade");
+// }
+
+let costPrice = 500;
+let sellingPrice = 300;
+if (sellingPrice > costPrice) {
+  console.log("Profit", sellingPrice - costPrice);
 } else {
-  console.log("F Grade");
+  console.log("Loss", costPrice - sellingPrice);
 }
