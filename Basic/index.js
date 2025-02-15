@@ -404,12 +404,13 @@ const prompt = require("prompt-sync")();
 //   console.log(i);
 // }
 
+// Question 39: Enter a number to print its multiplication table.
 // let n = Number(prompt("Enter the table number :- "));
 // for (let i = 1; i <= 10; i++) {
 //   console.log(`${n} * ${i} = ${n * i}`);
 // }
 
-// Question 39: Calculate the factorial of a number.
+// Question 40: Calculate the factorial of a number.
 // let n = 5;
 // let fact = 1;
 // for (let i = 1; i <= n; i++) {
@@ -417,7 +418,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(fact);
 
-// Question 40: Calculate the sum of numbers from 1 to n.
+// Question 41: Calculate the sum of numbers from 1 to n.
 // let n = 5;
 // let sum = 0;
 // for (let i = 1; i <= n; i++) {
@@ -425,7 +426,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(sum);
 
-// Question 41: Calculate the average of numbers from 1 to n.
+// Question 42: Calculate the average of numbers from 1 to n.
 // let sum = 0;
 // let num = 5;
 // for (let i = 1; i < num; i++) {
@@ -434,7 +435,7 @@ const prompt = require("prompt-sync")();
 // console.log(sum);
 // console.log(sum / num);
 
-// Question 42: Find the factors of a number.
+// Question 43: Find the factors of a number.
 // let n = 12;
 // for (let i = 1; i <= n; i++) {
 //   if (n % i === 0) {
@@ -442,7 +443,7 @@ const prompt = require("prompt-sync")();
 //   }
 // }
 
-// Question 43: Calculate the sum of factors of a number.
+// Question 44: Calculate the sum of factors of a number.
 // let n = 12;
 // let sum = 0;
 // for (let i = 1; i <= n; i++) {
@@ -452,7 +453,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(sum);
 
-// Question 44: Calculate the power of a number.
+// Question 45: Calculate the power of a number.
 // let a = 2;
 // let b = 4;
 // let sum = 1;
@@ -461,7 +462,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(sum);
 
-// Question 45: Calculate the sum of even and odd numbers from 1 to n.
+// Question 46: Calculate the sum of even and odd numbers from 1 to n.
 // let even = 0;
 // let odd = 0;
 // let n = 10;
@@ -474,7 +475,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(even, odd);
 
-// Question 46: Check if a number is prime or not.
+// Question 47: Check if a number is prime or not.
 // let n = 11;
 // let count = 0;
 // for (let i = 1; i <= Math.sqrt(n); i++) {
@@ -487,7 +488,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(count == 2 ? "Prime Number" : "Not Prime Number");
 
-// Question 47: Print all prime numbers from 1 to 500.
+// Question 48: Print all prime numbers from 1 to 500.
 // function isPrime(n) {
 //   let count = 0;
 //   for (let i = 1; i <= Math.sqrt(n); i++) {
@@ -507,7 +508,7 @@ const prompt = require("prompt-sync")();
 //   }
 // }
 
-// Question 48: Calculate the sum of digits of a number.
+// Question 49: Calculate the sum of digits of a number.
 // let n = 465;
 // let sum = 0;
 // while (n != 0) {
@@ -517,7 +518,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(sum);
 
-// Question 49: Print the Fibonacci series up to n terms.
+// Question 50: Print the Fibonacci series up to n terms.
 // let n = 7;
 // let a = 0;
 // let b = 1;
@@ -528,6 +529,7 @@ const prompt = require("prompt-sync")();
 //   a = temp;
 // }
 
+// Question 51: Print numbers from 1 to 100 with FizzBuzz logic.
 // for (let i = 1; i <= 100; i++) {
 //   if (i % 3 === 0 && i % 5 === 0) {
 //     console.log("FizzBuzz");
@@ -540,7 +542,7 @@ const prompt = require("prompt-sync")();
 //   }
 // }
 
-// Question 50: Reverse a number.
+// Question 52: Reverse a number.
 // let n = 1234;
 // let rev = 0;
 // while (n != 0) {
@@ -550,7 +552,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(rev);
 
-// Question 51: Check if a number is a palindrome or not.
+// Question 53: Check if a number is a palindrome or not.
 // let n = 121;
 // let temp = n;
 // let rev = 0;
@@ -561,7 +563,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(rev === temp ? "Palindrome" : "Not Palindrome");
 
-// Question 52: Calculate the GCD and LCM of two numbers.
+// Question 54: Calculate the GCD and LCM of two numbers.
 // let a = 12;
 // let b = 20;
 // let num1 = a;
@@ -576,6 +578,7 @@ const prompt = require("prompt-sync")();
 // let LCM = (num1 * num2) / a;
 // console.log(LCM);
 
+// Question 55: Check if a number is a Harshad number.
 // let n = 24;
 // let temp = n;
 // let sum = 0;
@@ -586,6 +589,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(temp % sum === 0 ? "Harshad Number" : "Not a Harshad Number");
 
+// Question 56: Check if a number is a perfect number.
 // let n = 6;
 // let temp = n;
 // let sum = 0;
@@ -596,6 +600,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(temp === sum ? "Perfect Number" : "Not a Perfect Number");
 
+// Question 57: Check if a number is an Armstrong number.
 // let n = 407;
 // let temp = n;
 // let temp1 = n;
@@ -612,6 +617,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(temp1 === sum ? "Armstrong Number" : "Not a Armstrong Number");
 
+// Question 58: Check if a number is a strong number.
 // let n = 145;
 // let sum = 0;
 // let temp = n;
@@ -626,6 +632,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(temp === sum ? "Strong Number" : "Not a Strong Number");
 
+// Question 59: Check if a number is an automorphic number.
 // let n = 25;
 // let sq = n * n;
 // let count = 0;
