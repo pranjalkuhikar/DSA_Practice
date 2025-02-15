@@ -595,16 +595,30 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(temp1 === sum ? "Armstrong Number" : "Not a Armstrong Number");
 
-let n = 145;
-let sum = 0;
+// let n = 145;
+// let sum = 0;
+// let temp = n;
+// while (n != 0) {
+//   let lastDigit = n % 10;
+//   let fact = 1;
+//   for (let i = 1; i <= lastDigit; i++) {
+//     fact *= i;
+//   }
+//   sum += fact;
+//   n = Math.floor(n / 10);
+// }
+// console.log(temp === sum ? "Strong Number" : "Not a Strong Number");
+
+let n = 25;
+let sq = n * n;
+let count = 0;
 let temp = n;
 while (n != 0) {
-  let lastDigit = n % 10;
-  let fact = 1;
-  for (let i = 1; i <= lastDigit; i++) {
-    fact *= i;
-  }
-  sum += fact;
+  count++;
   n = Math.floor(n / 10);
 }
-console.log(temp === sum ? "Strong Number" : "Not a Strong Number");
+console.log(
+  sq % Math.pow(10, count) === temp
+    ? "Automorphic Number"
+    : "Not a Automorphic NUmber"
+);
