@@ -558,3 +558,13 @@ const prompt = require("prompt-sync")();
 // console.log(GCD);
 // let LCM = (num1 * num2) / a;
 // console.log(LCM);
+
+let n = 24;
+let temp = n;
+let sum = 0;
+while (n != 0) {
+  let lastDigit = n % 10;
+  sum += lastDigit;
+  n = Math.floor(n / 10);
+}
+console.log(temp % sum === 0 ? "Harshad Number" : "Not a Harshad Number");
