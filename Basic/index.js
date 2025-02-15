@@ -492,11 +492,21 @@ const prompt = require("prompt-sync")();
 //   }
 // }
 
-let n = 465;
-let sum = 0;
-while (n != 0) {
-  let lastDigit = n % 10;
-  sum += lastDigit;
-  n = Math.floor(n / 10);
+// let n = 465;
+// let sum = 0;
+// while (n != 0) {
+//   let lastDigit = n % 10;
+//   sum += lastDigit;
+//   n = Math.floor(n / 10);
+// }
+// console.log(sum);
+
+let n = 7;
+let a = 0;
+let b = 1;
+for (let i = 1; i <= n; i++) {
+  console.log(a);
+  let temp = b;
+  b = a + b;
+  a = temp;
 }
-console.log(sum);
