@@ -473,21 +473,30 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(count == 2 ? "Prime Number" : "Not Prime Number");
 
-function isPrime(n) {
-  let count = 0;
-  for (let i = 1; i <= Math.sqrt(n); i++) {
-    if (n % i === 0) {
-      count++;
-      if (n / i != i) {
-        count++;
-      }
-    }
-  }
-  return count === 2;
-}
+// function isPrime(n) {
+//   let count = 0;
+//   for (let i = 1; i <= Math.sqrt(n); i++) {
+//     if (n % i === 0) {
+//       count++;
+//       if (n / i != i) {
+//         count++;
+//       }
+//     }
+//   }
+//   return count === 2;
+// }
 
-for (let i = 1; i <= 500; i++) {
-  if (isPrime(i)) {
-    console.log(i);
-  }
+// for (let i = 1; i <= 500; i++) {
+//   if (isPrime(i)) {
+//     console.log(i);
+//   }
+// }
+
+let n = 465;
+let sum = 0;
+while (n != 0) {
+  let lastDigit = n % 10;
+  sum += lastDigit;
+  n = Math.floor(n / 10);
 }
+console.log(sum);
