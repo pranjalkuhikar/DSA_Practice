@@ -395,3 +395,10 @@ const prompt = require("prompt-sync")();
 //   default:
 //     console.log("Invalid Operator");
 // }
+
+// -----------------------------------Loop-----------------------------------
+
+let n = Number(prompt("Enter the Number :- "));
+for (let i = 1; i <= n; i++) {
+  console.log(i);
+}
