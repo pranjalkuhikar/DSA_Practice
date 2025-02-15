@@ -275,22 +275,49 @@ const prompt = require("prompt-sync")();
 //   console.log("Super Hit");
 // }
 
-let gender = prompt("Enter the Gender :- ");
-let qualification = prompt("Enter (graduation/post-graduation) :- ");
-let year = Number(prompt("Enter the Year :- "));
-let salary;
+// let gender = prompt("Enter the Gender :- ");
+// let qualification = prompt("Enter (graduation/post-graduation) :- ");
+// let year = Number(prompt("Enter the Year :- "));
+// let salary;
 
-if (gender === "male") {
-  if (qualification === "graduation") {
-    salary = year < 10 ? 7000 : 10000;
-  } else if (qualification === "post-graduation") {
-    salary = year < 10 ? 10000 : 15000;
-  }
-} else if (gender === "female") {
-  if (qualification === "graduation") {
-    salary = year < 10 ? 6000 : 9000;
-  } else if (qualification === "post-graduation") {
-    salary = year < 10 ? 10000 : 12000;
-  }
+// if (gender === "male") {
+//   if (qualification === "graduation") {
+//     salary = year < 10 ? 7000 : 10000;
+//   } else if (qualification === "post-graduation") {
+//     salary = year < 10 ? 10000 : 15000;
+//   }
+// } else if (gender === "female") {
+//   if (qualification === "graduation") {
+//     salary = year < 10 ? 6000 : 9000;
+//   } else if (qualification === "post-graduation") {
+//     salary = year < 10 ? 10000 : 12000;
+//   }
+// }
+// console.log(salary ? `${salary}` : "Invalid");
+
+let n = Number(prompt("Enter the day Number :- "));
+switch (n) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+  case 6:
+    console.log("Saturday");
+    break;
+  case 7:
+    console.log("Sunday");
+    break;
+  default:
+    console.log("Invalid Input");
 }
-console.log(salary ? `${salary}` : "Invalid");
