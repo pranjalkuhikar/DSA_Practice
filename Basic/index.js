@@ -441,10 +441,22 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(sum);
 
-let a = 2;
-let b = 4;
-let sum = 1;
-for (let i = 1; i <= b; i++) {
-  sum *= a;
+// let a = 2;
+// let b = 4;
+// let sum = 1;
+// for (let i = 1; i <= b; i++) {
+//   sum *= a;
+// }
+// console.log(sum);
+
+let even = 0;
+let odd = 0;
+let n = 10;
+for (let i = 1; i <= n; i++) {
+  if (i % 2 === 0) {
+    even += i;
+  } else {
+    odd += i;
+  }
 }
-console.log(sum);
+console.log(even, odd);
