@@ -449,14 +449,26 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(sum);
 
-let even = 0;
-let odd = 0;
-let n = 10;
-for (let i = 1; i <= n; i++) {
-  if (i % 2 === 0) {
-    even += i;
-  } else {
-    odd += i;
+// let even = 0;
+// let odd = 0;
+// let n = 10;
+// for (let i = 1; i <= n; i++) {
+//   if (i % 2 === 0) {
+//     even += i;
+//   } else {
+//     odd += i;
+//   }
+// }
+// console.log(even, odd);
+
+let n = 11;
+let count = 0;
+for (let i = 1; i <= Math.sqrt(n); i++) {
+  if (n % i === 0) {
+    count++;
+    if (n / i != i) {
+      count++;
+    }
   }
 }
-console.log(even, odd);
+console.log(count == 2 ? "Prime Number" : "Not Prime Number");
