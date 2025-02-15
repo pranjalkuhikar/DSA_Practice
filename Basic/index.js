@@ -241,11 +241,24 @@ const prompt = require("prompt-sync")();
 //   console.log(100 * 4.2 + 100 * 6 + 200 * 8 + (unit - 400) * 13);
 // }
 
-let height = 145;
-if (height >= 200) {
-  console.log("He is Tall");
-} else if (height >= 150 && height < 200) {
-  console.log("He is  Average");
+// let height = 145;
+// if (height >= 200) {
+//   console.log("He is Tall");
+// } else if (height >= 150 && height < 200) {
+//   console.log("He is  Average");
+// } else {
+//   console.log("He is Dwarf");
+// }
+
+let alphabet = prompt("Enter the Alphabet :- ").toLowerCase();
+if (
+  alphabet === "a" ||
+  alphabet === "e" ||
+  alphabet === "i" ||
+  alphabet === "o" ||
+  alphabet === "u"
+) {
+  console.log("This is Vowel");
 } else {
-  console.log("He is Dwarf");
+  console.log("This is Constant");
 }
