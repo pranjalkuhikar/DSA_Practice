@@ -398,7 +398,14 @@ const prompt = require("prompt-sync")();
 
 // -----------------------------------Loop-----------------------------------
 
-let n = Number(prompt("Enter the Number :- "));
+// let n = Number(prompt("Enter the Number :- "));
+// for (let i = 1; i <= n; i++) {
+//   console.log(i);
+// }
+
+let n = 5;
+let fact = 1;
 for (let i = 1; i <= n; i++) {
-  console.log(i);
+  fact *= i;
 }
+console.log(fact);
