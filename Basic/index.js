@@ -230,13 +230,22 @@ const prompt = require("prompt-sync")();
 //   );
 // }
 
-let unit = 700;
-if (unit <= 100) {
-  console.log(unit * 4.2);
-} else if (unit <= 200) {
-  console.log(100 * 4.2 + (unit - 100) * 6);
-} else if (unit <= 400) {
-  console.log(100 * 4.2 + 100 * 6 + (unit - 200) * 8);
-} else if (unit > 400) {
-  console.log(100 * 4.2 + 100 * 6 + 200 * 8 + (unit - 400) * 13);
+// let unit = 700;
+// if (unit <= 100) {
+//   console.log(unit * 4.2);
+// } else if (unit <= 200) {
+//   console.log(100 * 4.2 + (unit - 100) * 6);
+// } else if (unit <= 400) {
+//   console.log(100 * 4.2 + 100 * 6 + (unit - 200) * 8);
+// } else if (unit > 400) {
+//   console.log(100 * 4.2 + 100 * 6 + 200 * 8 + (unit - 400) * 13);
+// }
+
+let height = 145;
+if (height >= 200) {
+  console.log("He is Tall");
+} else if (height >= 150 && height < 200) {
+  console.log("He is  Average");
+} else {
+  console.log("He is Dwarf");
 }
