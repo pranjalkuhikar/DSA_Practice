@@ -404,6 +404,11 @@ const prompt = require("prompt-sync")();
 //   console.log(i);
 // }
 
+// let n = Number(prompt("Enter the table number :- "));
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`${n} * ${i} = ${n * i}`);
+// }
+
 // Question 39: Calculate the factorial of a number.
 // let n = 5;
 // let fact = 1;
@@ -523,6 +528,18 @@ const prompt = require("prompt-sync")();
 //   a = temp;
 // }
 
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
+
 // Question 50: Reverse a number.
 // let n = 1234;
 // let rev = 0;
@@ -609,16 +626,16 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(temp === sum ? "Strong Number" : "Not a Strong Number");
 
-let n = 25;
-let sq = n * n;
-let count = 0;
-let temp = n;
-while (n != 0) {
-  count++;
-  n = Math.floor(n / 10);
-}
-console.log(
-  sq % Math.pow(10, count) === temp
-    ? "Automorphic Number"
-    : "Not a Automorphic NUmber"
-);
+// let n = 25;
+// let sq = n * n;
+// let count = 0;
+// let temp = n;
+// while (n != 0) {
+//   count++;
+//   n = Math.floor(n / 10);
+// }
+// console.log(
+//   sq % Math.pow(10, count) === temp
+//     ? "Automorphic Number"
+//     : "Not a Automorphic NUmber"
+// );
