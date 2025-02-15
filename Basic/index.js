@@ -520,12 +520,27 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(rev);
 
-let n = 121;
-let temp = n;
-let rev = 0;
-while (n != 0) {
-  let lastDigit = n % 10;
-  rev = rev * 10 + lastDigit;
-  n = Math.floor(n / 10);
+// let n = 121;
+// let temp = n;
+// let rev = 0;
+// while (n != 0) {
+//   let lastDigit = n % 10;
+//   rev = rev * 10 + lastDigit;
+//   n = Math.floor(n / 10);
+// }
+// console.log(rev === temp ? "Palindrome" : "Not Palindrome");
+
+let a = 12;
+let b = 20;
+let num1 = a;
+let num2 = b;
+while (b != 0) {
+  let temp = b;
+  b = a % b;
+  a = temp;
 }
-console.log(rev === temp ? "Palindrome" : "Not Palindrome");
+let GCD = a;
+console.log(GCD);
+
+let LCM = (num1 * num2) / a;
+console.log(LCM);
