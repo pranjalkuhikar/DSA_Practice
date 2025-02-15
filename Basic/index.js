@@ -410,9 +410,17 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(fact);
 
-let n = 5;
+// let n = 5;
+// let sum = 0;
+// for (let i = 1; i <= n; i++) {
+//   sum += i;
+// }
+// console.log(sum);
+
 let sum = 0;
-for (let i = 1; i <= n; i++) {
+let num = 5;
+for (let i = 1; i < num; i++) {
   sum += i;
 }
 console.log(sum);
+console.log(sum / num);
