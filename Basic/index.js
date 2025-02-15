@@ -322,44 +322,65 @@ const prompt = require("prompt-sync")();
 //     console.log("Invalid Input");
 // }
 
-let month = Number(prompt("Enter the Month Number :- "));
-switch (month) {
-  case 1:
-    console.log("January");
+// let month = Number(prompt("Enter the Month Number :- "));
+// switch (month) {
+//   case 1:
+//     console.log("January");
+//     break;
+//   case 2:
+//     console.log("February");
+//     break;
+//   case 3:
+//     console.log("March");
+//     break;
+//   case 4:
+//     console.log("April");
+//     break;
+//   case 5:
+//     console.log("May");
+//     break;
+//   case 6:
+//     console.log("June");
+//     break;
+//   case 7:
+//     console.log("July");
+//     break;
+//   case 8:
+//     console.log("August");
+//     break;
+//   case 9:
+//     console.log("September");
+//     break;
+//   case 10:
+//     console.log("October");
+//     break;
+//   case 11:
+//     console.log("November");
+//     break;
+//   case 12:
+//     console.log("December");
+//     break;
+//   default:
+//     console.log("Invalid Input");
+// }
+
+let operator = prompt("Enter the Operator(+,-,*,/) :- ");
+let a = Number(prompt("Enter the num 1 :- "));
+let b = Number(prompt("Enter the num 2 :- "));
+
+switch (operator) {
+  case "+":
+    console.log("Addition", a + b);
     break;
-  case 2:
-    console.log("February");
+  case "-":
+    console.log("Subtraction ", a - b);
     break;
-  case 3:
-    console.log("March");
+  case "*":
+    console.log("Multiplication = ", a * b);
     break;
-  case 4:
-    console.log("April");
-    break;
-  case 5:
-    console.log("May");
-    break;
-  case 6:
-    console.log("June");
-    break;
-  case 7:
-    console.log("July");
-    break;
-  case 8:
-    console.log("August");
-    break;
-  case 9:
-    console.log("September");
-    break;
-  case 10:
-    console.log("October");
-    break;
-  case 11:
-    console.log("November");
-    break;
-  case 12:
-    console.log("December");
+  case "/":
+    console.log("Division = ", a / b);
     break;
   default:
-    console.log("Invalid Input");
+    console.log("Invalid Operator");
 }
