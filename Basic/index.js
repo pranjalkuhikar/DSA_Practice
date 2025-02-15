@@ -403,9 +403,16 @@ const prompt = require("prompt-sync")();
 //   console.log(i);
 // }
 
+// let n = 5;
+// let fact = 1;
+// for (let i = 1; i <= n; i++) {
+//   fact *= i;
+// }
+// console.log(fact);
+
 let n = 5;
-let fact = 1;
+let sum = 0;
 for (let i = 1; i <= n; i++) {
-  fact *= i;
+  sum += i;
 }
-console.log(fact);
+console.log(sum);
