@@ -432,11 +432,19 @@ const prompt = require("prompt-sync")();
 //   }
 // }
 
-let n = 12;
-let sum = 0;
-for (let i = 1; i <= n; i++) {
-  if (n % i === 0) {
-    sum += i;
-  }
+// let n = 12;
+// let sum = 0;
+// for (let i = 1; i <= n; i++) {
+//   if (n % i === 0) {
+//     sum += i;
+//   }
+// }
+// console.log(sum);
+
+let a = 2;
+let b = 4;
+let sum = 1;
+for (let i = 1; i <= b; i++) {
+  sum *= a;
 }
 console.log(sum);
