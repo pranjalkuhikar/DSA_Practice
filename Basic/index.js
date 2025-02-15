@@ -263,14 +263,34 @@ const prompt = require("prompt-sync")();
 //   console.log("This is Constant");
 // }
 
-let name = prompt("Enter the Movie Name :- ");
-let rating = Number(prompt("Enter the Rating :- "));
-if (rating < 2.0) {
-  console.log("Flop");
-} else if (rating < 3.4) {
-  console.log("Semi Hit");
-} else if (rating < 4.5) {
-  console.log("Hit");
-} else if (rating < 5.0) {
-  console.log("Super Hit");
+// let name = prompt("Enter the Movie Name :- ");
+// let rating = Number(prompt("Enter the Rating :- "));
+// if (rating < 2.0) {
+//   console.log("Flop");
+// } else if (rating < 3.4) {
+//   console.log("Semi Hit");
+// } else if (rating < 4.5) {
+//   console.log("Hit");
+// } else if (rating < 5.0) {
+//   console.log("Super Hit");
+// }
+
+let gender = prompt("Enter the Gender :- ");
+let qualification = prompt("Enter (graduation/post-graduation) :- ");
+let year = Number(prompt("Enter the Year :- "));
+let salary;
+
+if (gender === "male") {
+  if (qualification === "graduation") {
+    salary = year < 10 ? 7000 : 10000;
+  } else if (qualification === "post-graduation") {
+    salary = year < 10 ? 10000 : 15000;
+  }
+} else if (gender === "female") {
+  if (qualification === "graduation") {
+    salary = year < 10 ? 6000 : 9000;
+  } else if (qualification === "post-graduation") {
+    salary = year < 10 ? 10000 : 12000;
+  }
 }
+console.log(salary ? `${salary}` : "Invalid");
