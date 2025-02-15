@@ -501,12 +501,21 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(sum);
 
-let n = 7;
-let a = 0;
-let b = 1;
-for (let i = 1; i <= n; i++) {
-  console.log(a);
-  let temp = b;
-  b = a + b;
-  a = temp;
+// let n = 7;
+// let a = 0;
+// let b = 1;
+// for (let i = 1; i <= n; i++) {
+//   console.log(a);
+//   let temp = b;
+//   b = a + b;
+//   a = temp;
+// }
+
+let n = 1234;
+let rev = 0;
+while (n != 0) {
+  let lastDigit = n % 10;
+  rev = rev * 10 + lastDigit;
+  n = Math.floor(n / 10);
 }
+console.log(rev);
