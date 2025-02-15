@@ -250,15 +250,27 @@ const prompt = require("prompt-sync")();
 //   console.log("He is Dwarf");
 // }
 
-let alphabet = prompt("Enter the Alphabet :- ").toLowerCase();
-if (
-  alphabet === "a" ||
-  alphabet === "e" ||
-  alphabet === "i" ||
-  alphabet === "o" ||
-  alphabet === "u"
-) {
-  console.log("This is Vowel");
-} else {
-  console.log("This is Constant");
+// let alphabet = prompt("Enter the Alphabet :- ").toLowerCase();
+// if (
+//   alphabet === "a" ||
+//   alphabet === "e" ||
+//   alphabet === "i" ||
+//   alphabet === "o" ||
+//   alphabet === "u"
+// ) {
+//   console.log("This is Vowel");
+// } else {
+//   console.log("This is Constant");
+// }
+
+let name = prompt("Enter the Movie Name :- ");
+let rating = Number(prompt("Enter the Rating :- "));
+if (rating < 2.0) {
+  console.log("Flop");
+} else if (rating < 3.4) {
+  console.log("Semi Hit");
+} else if (rating < 4.5) {
+  console.log("Hit");
+} else if (rating < 5.0) {
+  console.log("Super Hit");
 }
