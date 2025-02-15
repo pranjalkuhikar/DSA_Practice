@@ -569,12 +569,28 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(temp % sum === 0 ? "Harshad Number" : "Not a Harshad Number");
 
-let n = 6;
+// let n = 6;
+// let temp = n;
+// let sum = 0;
+// for (let i = 1; i < n; i++) {
+//   if (n % i === 0) {
+//     sum += i;
+//   }
+// }
+// console.log(temp === sum ? "Perfect Number" : "Not a Perfect Number");
+
+let n = 407;
 let temp = n;
+let temp1 = n;
+let count = 0;
 let sum = 0;
-for (let i = 1; i < n; i++) {
-  if (n % i === 0) {
-    sum += i;
-  }
+while (n != 0) {
+  count++;
+  n = Math.floor(n / 10);
 }
-console.log(temp === sum ? "Perfect Number" : "Not a Perfect Number");
+while (temp != 0) {
+  let lastDigit = temp % 10;
+  sum += Math.pow(lastDigit, count);
+  temp = Math.floor(temp / 10);
+}
+console.log(temp1 === sum ? "Armstrong Number" : "Not a Armstrong Number");
