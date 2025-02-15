@@ -579,18 +579,32 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(temp === sum ? "Perfect Number" : "Not a Perfect Number");
 
-let n = 407;
-let temp = n;
-let temp1 = n;
-let count = 0;
+// let n = 407;
+// let temp = n;
+// let temp1 = n;
+// let count = 0;
+// let sum = 0;
+// while (n != 0) {
+//   count++;
+//   n = Math.floor(n / 10);
+// }
+// while (temp != 0) {
+//   let lastDigit = temp % 10;
+//   sum += Math.pow(lastDigit, count);
+//   temp = Math.floor(temp / 10);
+// }
+// console.log(temp1 === sum ? "Armstrong Number" : "Not a Armstrong Number");
+
+let n = 145;
 let sum = 0;
+let temp = n;
 while (n != 0) {
-  count++;
+  let lastDigit = n % 10;
+  let fact = 1;
+  for (let i = 1; i <= lastDigit; i++) {
+    fact *= i;
+  }
+  sum += fact;
   n = Math.floor(n / 10);
 }
-while (temp != 0) {
-  let lastDigit = temp % 10;
-  sum += Math.pow(lastDigit, count);
-  temp = Math.floor(temp / 10);
-}
-console.log(temp1 === sum ? "Armstrong Number" : "Not a Armstrong Number");
+console.log(temp === sum ? "Strong Number" : "Not a Strong Number");
