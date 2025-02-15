@@ -461,14 +461,33 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(even, odd);
 
-let n = 11;
-let count = 0;
-for (let i = 1; i <= Math.sqrt(n); i++) {
-  if (n % i === 0) {
-    count++;
-    if (n / i != i) {
+// let n = 11;
+// let count = 0;
+// for (let i = 1; i <= Math.sqrt(n); i++) {
+//   if (n % i === 0) {
+//     count++;
+//     if (n / i != i) {
+//       count++;
+//     }
+//   }
+// }
+// console.log(count == 2 ? "Prime Number" : "Not Prime Number");
+
+function isPrime(n) {
+  let count = 0;
+  for (let i = 1; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) {
       count++;
+      if (n / i != i) {
+        count++;
+      }
     }
   }
+  return count === 2;
 }
-console.log(count == 2 ? "Prime Number" : "Not Prime Number");
+
+for (let i = 1; i <= 500; i++) {
+  if (isPrime(i)) {
+    console.log(i);
+  }
+}
