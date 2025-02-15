@@ -398,11 +398,13 @@ const prompt = require("prompt-sync")();
 
 // -----------------------------------Loop-----------------------------------
 
+// Question 38: Enter a number to print numbers from 1 to n.
 // let n = Number(prompt("Enter the Number :- "));
 // for (let i = 1; i <= n; i++) {
 //   console.log(i);
 // }
 
+// Question 39: Calculate the factorial of a number.
 // let n = 5;
 // let fact = 1;
 // for (let i = 1; i <= n; i++) {
@@ -410,6 +412,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(fact);
 
+// Question 40: Calculate the sum of numbers from 1 to n.
 // let n = 5;
 // let sum = 0;
 // for (let i = 1; i <= n; i++) {
@@ -417,6 +420,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(sum);
 
+// Question 41: Calculate the average of numbers from 1 to n.
 // let sum = 0;
 // let num = 5;
 // for (let i = 1; i < num; i++) {
@@ -425,6 +429,7 @@ const prompt = require("prompt-sync")();
 // console.log(sum);
 // console.log(sum / num);
 
+// Question 42: Find the factors of a number.
 // let n = 12;
 // for (let i = 1; i <= n; i++) {
 //   if (n % i === 0) {
@@ -432,6 +437,7 @@ const prompt = require("prompt-sync")();
 //   }
 // }
 
+// Question 43: Calculate the sum of factors of a number.
 // let n = 12;
 // let sum = 0;
 // for (let i = 1; i <= n; i++) {
@@ -441,6 +447,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(sum);
 
+// Question 44: Calculate the power of a number.
 // let a = 2;
 // let b = 4;
 // let sum = 1;
@@ -449,6 +456,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(sum);
 
+// Question 45: Calculate the sum of even and odd numbers from 1 to n.
 // let even = 0;
 // let odd = 0;
 // let n = 10;
@@ -461,6 +469,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(even, odd);
 
+// Question 46: Check if a number is prime or not.
 // let n = 11;
 // let count = 0;
 // for (let i = 1; i <= Math.sqrt(n); i++) {
@@ -473,6 +482,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(count == 2 ? "Prime Number" : "Not Prime Number");
 
+// Question 47: Print all prime numbers from 1 to 500.
 // function isPrime(n) {
 //   let count = 0;
 //   for (let i = 1; i <= Math.sqrt(n); i++) {
@@ -492,6 +502,7 @@ const prompt = require("prompt-sync")();
 //   }
 // }
 
+// Question 48: Calculate the sum of digits of a number.
 // let n = 465;
 // let sum = 0;
 // while (n != 0) {
@@ -501,6 +512,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(sum);
 
+// Question 49: Print the Fibonacci series up to n terms.
 // let n = 7;
 // let a = 0;
 // let b = 1;
@@ -511,6 +523,7 @@ const prompt = require("prompt-sync")();
 //   a = temp;
 // }
 
+// Question 50: Reverse a number.
 // let n = 1234;
 // let rev = 0;
 // while (n != 0) {
@@ -520,6 +533,7 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(rev);
 
+// Question 51: Check if a number is a palindrome or not.
 // let n = 121;
 // let temp = n;
 // let rev = 0;
@@ -530,17 +544,17 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(rev === temp ? "Palindrome" : "Not Palindrome");
 
-let a = 12;
-let b = 20;
-let num1 = a;
-let num2 = b;
-while (b != 0) {
-  let temp = b;
-  b = a % b;
-  a = temp;
-}
-let GCD = a;
-console.log(GCD);
-
-let LCM = (num1 * num2) / a;
-console.log(LCM);
+// Question 52: Calculate the GCD and LCM of two numbers.
+// let a = 12;
+// let b = 20;
+// let num1 = a;
+// let num2 = b;
+// while (b != 0) {
+//   let temp = b;
+//   b = a % b;
+//   a = temp;
+// }
+// let GCD = a;
+// console.log(GCD);
+// let LCM = (num1 * num2) / a;
+// console.log(LCM);
