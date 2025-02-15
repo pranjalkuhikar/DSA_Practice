@@ -295,28 +295,70 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(salary ? `${salary}` : "Invalid");
 
-let n = Number(prompt("Enter the day Number :- "));
-switch (n) {
+// let n = Number(prompt("Enter the day Number :- "));
+// switch (n) {
+//   case 1:
+//     console.log("Monday");
+//     break;
+//   case 2:
+//     console.log("Tuesday");
+//     break;
+//   case 3:
+//     console.log("Wednesday");
+//     break;
+//   case 4:
+//     console.log("Thursday");
+//     break;
+//   case 5:
+//     console.log("Friday");
+//     break;
+//   case 6:
+//     console.log("Saturday");
+//     break;
+//   case 7:
+//     console.log("Sunday");
+//     break;
+//   default:
+//     console.log("Invalid Input");
+// }
+
+let month = Number(prompt("Enter the Month Number :- "));
+switch (month) {
   case 1:
-    console.log("Monday");
+    console.log("January");
     break;
   case 2:
-    console.log("Tuesday");
+    console.log("February");
     break;
   case 3:
-    console.log("Wednesday");
+    console.log("March");
     break;
   case 4:
-    console.log("Thursday");
+    console.log("April");
     break;
   case 5:
-    console.log("Friday");
+    console.log("May");
     break;
   case 6:
-    console.log("Saturday");
+    console.log("June");
     break;
   case 7:
-    console.log("Sunday");
+    console.log("July");
+    break;
+  case 8:
+    console.log("August");
+    break;
+  case 9:
+    console.log("September");
+    break;
+  case 10:
+    console.log("October");
+    break;
+  case 11:
+    console.log("November");
+    break;
+  case 12:
+    console.log("December");
     break;
   default:
     console.log("Invalid Input");
