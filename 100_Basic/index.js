@@ -244,16 +244,21 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(temp < sum ? "Abundant Number" : "Not a Abundant Number");
 
-let n = 25;
-let sq = n * n;
-let temp = n;
-let count = 0;
-while (n != 0) {
-  count++;
-  n = Math.floor(n / 10);
-}
+// let n = 25;
+// let sq = n * n;
+// let temp = n;
+// let count = 0;
+// while (n != 0) {
+//   count++;
+//   n = Math.floor(n / 10);
+// }
+// console.log(
+//   sq % Math.pow(10, count) === temp
+//     ? "Automorphic Number"
+//     : "Not a Automorphic Number"
+// );
+
+let n = 49;
 console.log(
-  sq % Math.pow(10, count) === temp
-    ? "Automorphic Number"
-    : "Not a Automorphic Number"
+  Number.isInteger(Math.sqrt(n)) ? "Perfect Square " : "Not a Perfect Square"
 );
