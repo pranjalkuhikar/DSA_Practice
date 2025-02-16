@@ -165,12 +165,20 @@ const prompt = require("prompt-sync")();
 //   b = temp;
 // }
 
-let n = 4;
-let a = 0;
-let b = 1;
-for (let i = 1; i <= n; i++) {
-  let temp = a;
-  a = a + b;
-  b = temp;
+// let n = 4;
+// let a = 0;
+// let b = 1;
+// for (let i = 1; i <= n; i++) {
+//   let temp = a;
+//   a = a + b;
+//   b = temp;
+// }
+// console.log(a);
+
+let n1 = 2;
+let n2 = 3;
+let sum = 1;
+for (let i = 1; i <= 3; i++) {
+  sum *= n1;
 }
-console.log(a);
+console.log(sum);
