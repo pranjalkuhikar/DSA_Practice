@@ -48,9 +48,21 @@ const prompt = require("prompt-sync")();
 //   console.log("n3 is Greater which is", n3);
 // }
 
-let year = 2024;
-if (year % 4 === 0 && (year % 100 != 0 || year % 400 === 0)) {
-  console.log("Leap Year");
-} else {
-  console.log("Not a Leap Year");
+// let year = 2024;
+// if (year % 4 === 0 && (year % 100 != 0 || year % 400 === 0)) {
+//   console.log("Leap Year");
+// } else {
+//   console.log("Not a Leap Year");
+// }
+
+let n = 23;
+let count = 0;
+for (let i = 1; i <= Math.sqrt(n); i++) {
+  if (n % i === 0) {
+    count++;
+    if (n / i != i) {
+      count++;
+    }
+  }
 }
+console.log(count === 2 ? "Prime Number" : "Not a Prime Number");
