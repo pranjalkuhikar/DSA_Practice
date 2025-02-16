@@ -258,7 +258,18 @@ const prompt = require("prompt-sync")();
 //     : "Not a Automorphic Number"
 // );
 
-let n = 49;
-console.log(
-  Number.isInteger(Math.sqrt(n)) ? "Perfect Square " : "Not a Perfect Square"
-);
+// let n = 49;
+// console.log(
+//   Number.isInteger(Math.sqrt(n)) ? "Perfect Square " : "Not a Perfect Square"
+// );
+
+let n = 12;
+for (let i = 2; i <= Math.sqrt(n); i++) {
+  while (n % i === 0) {
+    console.log(i);
+    n /= i;
+  }
+}
+if (n > 1) {
+  console.log(n);
+}
