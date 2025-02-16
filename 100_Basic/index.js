@@ -37,13 +37,20 @@ const prompt = require("prompt-sync")();
 //   console.log("Smaller Number is", n2);
 // }
 
-let n1 = 12;
-let n2 = 9;
-let n3 = 14;
-if (n1 > n2 && n1 > n3) {
-  console.log("n1 is Greater which is", n1);
-} else if (n2 > n1 && n2 > n3) {
-  console.log("n2 is Greater which is", n2);
+// let n1 = 12;
+// let n2 = 9;
+// let n3 = 14;
+// if (n1 > n2 && n1 > n3) {
+//   console.log("n1 is Greater which is", n1);
+// } else if (n2 > n1 && n2 > n3) {
+//   console.log("n2 is Greater which is", n2);
+// } else {
+//   console.log("n3 is Greater which is", n3);
+// }
+
+let year = 2024;
+if (year % 4 === 0 && (year % 100 != 0 || year % 400 === 0)) {
+  console.log("Leap Year");
 } else {
-  console.log("n3 is Greater which is", n3);
+  console.log("Not a Leap Year");
 }
