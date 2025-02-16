@@ -234,12 +234,26 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(temp % sum === 0 ? "Harshad Number" : "Not a Harshad Number");
 
-let n = 12;
-let sum = 0;
+// let n = 12;
+// let sum = 0;
+// let temp = n;
+// for (let i = 1; i < n; i++) {
+//   if (n % i === 0) {
+//     sum += i;
+//   }
+// }
+// console.log(temp < sum ? "Abundant Number" : "Not a Abundant Number");
+
+let n = 25;
+let sq = n * n;
 let temp = n;
-for (let i = 1; i < n; i++) {
-  if (n % i === 0) {
-    sum += i;
-  }
+let count = 0;
+while (n != 0) {
+  count++;
+  n = Math.floor(n / 10);
 }
-console.log(temp < sum ? "Abundant Number" : "Not a Abundant Number");
+console.log(
+  sq % Math.pow(10, count) === temp
+    ? "Automorphic Number"
+    : "Not a Automorphic Number"
+);
