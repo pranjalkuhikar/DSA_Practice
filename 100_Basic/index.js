@@ -191,8 +191,11 @@ const prompt = require("prompt-sync")();
 // console.log(sum);
 
 let n = 10;
-for (let i = 1; i < n; i++) {
+for (let i = 1; i < Math.sqrt(n); i++) {
   if (n % i === 0) {
     console.log(i);
+    if (n / i != i) {
+      console.log(n / i);
+    }
   }
 }
