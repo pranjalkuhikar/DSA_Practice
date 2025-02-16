@@ -669,3 +669,9 @@ const prompt = require("prompt-sync")();
 //   sq = Math.floor(sq / 10);
 // }
 // console.log(temp === sum ? "Neon Number" : "Not a Neon Number");
+
+// Question 62: Check if a given number is a perfect square.
+let n = 49;
+console.log(
+  Number.isInteger(Math.sqrt(n)) ? "Perfect Square" : "Not a Perfect Square"
+);
