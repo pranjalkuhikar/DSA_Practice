@@ -671,7 +671,28 @@ const prompt = require("prompt-sync")();
 // console.log(temp === sum ? "Neon Number" : "Not a Neon Number");
 
 // Question 62: Check if a given number is a perfect square.
-let n = 49;
-console.log(
-  Number.isInteger(Math.sqrt(n)) ? "Perfect Square" : "Not a Perfect Square"
-);
+// let n = 49;
+// console.log(
+//   Number.isInteger(Math.sqrt(n)) ? "Perfect Square" : "Not a Perfect Square"
+// );
+
+// Question 63: Find count of all the numbers up to N that have exactly X divisors.
+function factorSeries(n) {
+  let count = 0;
+  for (let i = 1; i <= n; i++) {
+    if (n % i === 0) {
+      count++;
+    }
+  }
+  return count;
+}
+
+let n = 10;
+let x = 4;
+let count = 0;
+for (let i = 1; i <= n; i++) {
+  if (factorSeries(i) === x) {
+    count++;
+  }
+}
+console.log(count);
