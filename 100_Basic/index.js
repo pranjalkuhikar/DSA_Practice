@@ -278,14 +278,19 @@ let n1 = 6;
 let n2 = 28;
 let sum1 = 0;
 let sum2 = 0;
+
 for (let i = 1; i < n1; i++) {
   if (n1 % i === 0) {
     sum1 += i;
   }
 }
+
 for (let i = 1; i < n2; i++) {
   if (n2 % i === 0) {
     sum2 += i;
   }
 }
-console.log(sum1 === sum2 ? "Friendly Pair" : "Not a Friendly Pair");
+
+console.log(
+  sum1 === n2 && sum2 === n1 ? "Friendly Pair" : "Not a Friendly Pair"
+);
