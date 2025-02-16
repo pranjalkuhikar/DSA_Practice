@@ -21,10 +21,18 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(sum);
 
+// let n1 = 12;
+// let n2 = 15;
+// let sum = 0;
+// for (let i = n1; i <= n2; i++) {
+//   sum += i;
+// }
+// console.log(sum);
+
 let n1 = 12;
-let n2 = 15;
-let sum = 0;
-for (let i = n1; i <= n2; i++) {
-  sum += i;
+let n2 = 3;
+if (n1 > n2) {
+  console.log("Greater Number is", n1);
+} else {
+  console.log("Smaller Number is", n2);
 }
-console.log(sum);
