@@ -647,13 +647,23 @@ const prompt = require("prompt-sync")();
 //     : "Not a Automorphic NUmber"
 // );
 
-let n = 12;
-let temp = n;
-let sum = 0;
-for (let i = 1; i < n; i++) {
-  if (n % i === 0) {
-    sum += i;
-  }
-}
+// let n = 12;
+// let temp = n;
+// let sum = 0;
+// for (let i = 1; i < n; i++) {
+//   if (n % i === 0) {
+//     sum += i;
+//   }
+// }
+// console.log(temp < sum ? "Abundant Number" : "Not a Abundant Number");
 
-console.log(temp < sum ? "Abundant Number" : "Not a Abundant Number");
+let n = 9;
+let sq = n * n;
+let sum = 0;
+let temp = n;
+while (sq != 0) {
+  let lastDigit = sq % 10;
+  sum += lastDigit;
+  sq = Math.floor(sq / 10);
+}
+console.log(temp === sum ? "Neon Number" : "Not a Neon Number");
