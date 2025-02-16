@@ -29,12 +29,12 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(sum);
 
-let n = 5;
-let fact = 1;
-for (let i = 1; i <= n; i++) {
-  fact *= i;
-}
-console.log(fact);
+// let n = 5;
+// let fact = 1;
+// for (let i = 1; i <= n; i++) {
+//   fact *= i;
+// }
+// console.log(fact);
 
 // let n1 = 12;
 // let n2 = 3;
@@ -189,3 +189,10 @@ console.log(fact);
 //   sum *= n1;
 // }
 // console.log(sum);
+
+let n = 10;
+for (let i = 1; i < n; i++) {
+  if (n % i === 0) {
+    console.log(i);
+  }
+}
