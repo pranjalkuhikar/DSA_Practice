@@ -200,16 +200,26 @@ const prompt = require("prompt-sync")();
 //   }
 // }
 
-let n = 145;
+// let n = 145;
+// let sum = 0;
+// let temp = n;
+// while (n != 0) {
+//   let lastDigit = n % 10;
+//   let fact = 1;
+//   for (let i = 1; i <= lastDigit; i++) {
+//     fact *= i;
+//   }
+//   sum += fact;
+//   n = Math.floor(n / 10);
+// }
+// console.log(temp === sum ? "Strong Number" : "Not a Strong Number");
+
+let n = 6;
 let sum = 0;
 let temp = n;
-while (n != 0) {
-  let lastDigit = n % 10;
-  let fact = 1;
-  for (let i = 1; i <= lastDigit; i++) {
-    fact *= i;
+for (let i = 1; i < n; i++) {
+  if (n % i === 0) {
+    sum += i;
   }
-  sum += fact;
-  n = Math.floor(n / 10);
 }
-console.log(temp === sum ? "Strong Number" : "Not a Strong Number");
+console.log(temp === sum ? "Perfect Number" : "Not a Perfect Number");
