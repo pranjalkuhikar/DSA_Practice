@@ -115,18 +115,42 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(rev === temp ? "Palindrome Number" : "Not a Palindrome Number");
 
-let n = 153;
-let temp = n;
-let copy = n;
-let count = 0;
-let sum = 0;
-while (temp != 0) {
-  count++;
-  temp = Math.floor(temp / 10);
+// let n = 371;
+// let temp = n;
+// let copy = n;
+// let count = 0;
+// let sum = 0;
+// while (temp != 0) {
+//   count++;
+//   temp = Math.floor(temp / 10);
+// }
+// while (n != 0) {
+//   let lastDigit = n % 10;
+//   sum += Math.pow(lastDigit, count);
+//   n = Math.floor(n / 10);
+// }
+// console.log(copy === sum ? "Armstrong Number" : "Not a Armstrong Number");
+
+function armstrongNumber(n) {
+  let temp = n;
+  let copy = n;
+  let count = 0;
+  let sum = 0;
+  while (temp != 0) {
+    count++;
+    temp = Math.floor(temp / 10);
+  }
+  while (n != 0) {
+    let lastDigit = n % 10;
+    sum += Math.pow(lastDigit, count);
+    n = Math.floor(n / 10);
+  }
+  return copy === sum;
 }
-while (n != 0) {
-  let lastDigit = n % 10;
-  sum += Math.pow(lastDigit, count);
-  n = Math.floor(n / 10);
+let start = 10;
+let end = 1000;
+for (let i = start; i <= end; i++) {
+  if (armstrongNumber(i)) {
+    console.log(i);
+  }
 }
-console.log(copy === sum ? "Armstrong Number" : "Not a Armstrong Number");
