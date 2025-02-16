@@ -29,10 +29,21 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(sum);
 
+// let n1 = 12;
+// let n2 = 3;
+// if (n1 > n2) {
+//   console.log("Greater Number is", n1);
+// } else {
+//   console.log("Smaller Number is", n2);
+// }
+
 let n1 = 12;
-let n2 = 3;
-if (n1 > n2) {
-  console.log("Greater Number is", n1);
+let n2 = 9;
+let n3 = 14;
+if (n1 > n2 && n1 > n3) {
+  console.log("n1 is Greater which is", n1);
+} else if (n2 > n1 && n2 > n3) {
+  console.log("n2 is Greater which is", n2);
 } else {
-  console.log("Smaller Number is", n2);
+  console.log("n3 is Greater which is", n3);
 }
