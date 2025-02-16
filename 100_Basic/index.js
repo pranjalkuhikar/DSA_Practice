@@ -316,5 +316,5 @@ const prompt = require("prompt-sync")();
 //   }
 // }
 // console.log(
-//   sum1 === n2 && sum2 === n1 ? "Friendly Pair" : "Not a Friendly Pair"
+//   sum1 === n1 && sum2 === n2 ? "Friendly Pair" : "Not a Friendly Pair"
 // );
