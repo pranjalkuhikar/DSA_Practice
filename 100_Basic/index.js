@@ -105,12 +105,28 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(rev);
 
-let n = 121;
-let rev = 0;
+// let n = 121;
+// let rev = 0;
+// let temp = n;
+// while (n != 0) {
+//   let lastDigit = n % 10;
+//   rev = rev * 10 + lastDigit;
+//   n = Math.floor(n / 10);
+// }
+// console.log(rev === temp ? "Palindrome Number" : "Not a Palindrome Number");
+
+let n = 153;
 let temp = n;
+let copy = n;
+let count = 0;
+let sum = 0;
+while (temp != 0) {
+  count++;
+  temp = Math.floor(temp / 10);
+}
 while (n != 0) {
   let lastDigit = n % 10;
-  rev = rev * 10 + lastDigit;
+  sum += Math.pow(lastDigit, count);
   n = Math.floor(n / 10);
 }
-console.log(rev === temp ? "Palindrome Number" : "Not a Palindrome Number");
+console.log(copy === sum ? "Armstrong Number" : "Not a Armstrong Number");
