@@ -55,14 +55,34 @@ const prompt = require("prompt-sync")();
 //   console.log("Not a Leap Year");
 // }
 
-let n = 23;
-let count = 0;
-for (let i = 1; i <= Math.sqrt(n); i++) {
-  if (n % i === 0) {
-    count++;
-    if (n / i != i) {
+// let n = 23;
+// let count = 0;
+// for (let i = 1; i <= Math.sqrt(n); i++) {
+//   if (n % i === 0) {
+//     count++;
+//     if (n / i != i) {
+//       count++;
+//     }
+//   }
+// }
+// console.log(count === 2 ? "Prime Number" : "Not a Prime Number");
+
+function checkPrime(n) {
+  let count = 0;
+  for (let i = 1; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) {
       count++;
+      if (n / i != i) {
+        count++;
+      }
     }
   }
+  return count === 2;
 }
-console.log(count === 2 ? "Prime Number" : "Not a Prime Number");
+let start = 2;
+let end = 10;
+for (let i = start; i <= end; i++) {
+  if (checkPrime(i)) {
+    console.log(i);
+  }
+}
