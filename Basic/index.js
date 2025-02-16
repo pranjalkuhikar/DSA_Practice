@@ -647,6 +647,7 @@ const prompt = require("prompt-sync")();
 //     : "Not a Automorphic NUmber"
 // );
 
+// Question 60: Check if a number is an abundant number.
 // let n = 12;
 // let temp = n;
 // let sum = 0;
@@ -657,13 +658,14 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(temp < sum ? "Abundant Number" : "Not a Abundant Number");
 
-let n = 9;
-let sq = n * n;
-let sum = 0;
-let temp = n;
-while (sq != 0) {
-  let lastDigit = sq % 10;
-  sum += lastDigit;
-  sq = Math.floor(sq / 10);
-}
-console.log(temp === sum ? "Neon Number" : "Not a Neon Number");
+// Question 61: Check if a number is a neon num
+// let n = 9;
+// let sq = n * n;
+// let sum = 0;
+// let temp = n;
+// while (sq != 0) {
+//   let lastDigit = sq % 10;
+//   sum += lastDigit;
+//   sq = Math.floor(sq / 10);
+// }
+// console.log(temp === sum ? "Neon Number" : "Not a Neon Number");
