@@ -697,14 +697,13 @@ const prompt = require("prompt-sync")();
 // console.log(count);
 
 // Question 64: Find all prime factors of a given number.
-
-let n = 60;
-for (let i = 2; i <= Math.sqrt(n); i++) {
-  while (n % i === 0) {
-    console.log(i);
-    n /= i;
-  }
-}
-if (n > 1) {
-  console.log(n);
-}
+// let n = 60;
+// for (let i = 2; i <= Math.sqrt(n); i++) {
+//   while (n % i === 0) {
+//     console.log(i);
+//     n /= i;
+//   }
+// }
+// if (n > 1) {
+//   console.log(n);
+// }
