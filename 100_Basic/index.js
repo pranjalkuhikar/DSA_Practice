@@ -131,26 +131,36 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(copy === sum ? "Armstrong Number" : "Not a Armstrong Number");
 
-function armstrongNumber(n) {
-  let temp = n;
-  let copy = n;
-  let count = 0;
-  let sum = 0;
-  while (temp != 0) {
-    count++;
-    temp = Math.floor(temp / 10);
-  }
-  while (n != 0) {
-    let lastDigit = n % 10;
-    sum += Math.pow(lastDigit, count);
-    n = Math.floor(n / 10);
-  }
-  return copy === sum;
-}
-let start = 10;
-let end = 1000;
-for (let i = start; i <= end; i++) {
-  if (armstrongNumber(i)) {
-    console.log(i);
-  }
+// function armstrongNumber(n) {
+//   let temp = n;
+//   let copy = n;
+//   let count = 0;
+//   let sum = 0;
+//   while (temp != 0) {
+//     count++;
+//     temp = Math.floor(temp / 10);
+//   }
+//   while (n != 0) {
+//     let lastDigit = n % 10;
+//     sum += Math.pow(lastDigit, count);
+//     n = Math.floor(n / 10);
+//   }
+//   return copy === sum;
+// }
+// let start = 10;
+// let end = 1000;
+// for (let i = start; i <= end; i++) {
+//   if (armstrongNumber(i)) {
+//     console.log(i);
+//   }
+// }
+
+let n = 4;
+let a = 0;
+let b = 1;
+for (let i = 1; i <= n; i++) {
+  console.log(a);
+  let temp = a;
+  a = a + b;
+  b = temp;
 }
