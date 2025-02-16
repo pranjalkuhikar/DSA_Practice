@@ -96,11 +96,21 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(sum);
 
-let n = 123;
+// let n = 123;
+// let rev = 0;
+// while (n != 0) {
+//   let lastDigit = n % 10;
+//   rev = rev * 10 + lastDigit;
+//   n = Math.floor(n / 10);
+// }
+// console.log(rev);
+
+let n = 121;
 let rev = 0;
+let temp = n;
 while (n != 0) {
   let lastDigit = n % 10;
   rev = rev * 10 + lastDigit;
   n = Math.floor(n / 10);
 }
-console.log(rev);
+console.log(rev === temp ? "Palindrome Number" : "Not a Palindrome Number");
