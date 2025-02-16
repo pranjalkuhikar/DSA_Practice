@@ -263,13 +263,29 @@ const prompt = require("prompt-sync")();
 //   Number.isInteger(Math.sqrt(n)) ? "Perfect Square " : "Not a Perfect Square"
 // );
 
-let n = 12;
-for (let i = 2; i <= Math.sqrt(n); i++) {
-  while (n % i === 0) {
-    console.log(i);
-    n /= i;
+// let n = 12;
+// for (let i = 2; i <= Math.sqrt(n); i++) {
+//   while (n % i === 0) {
+//     console.log(i);
+//     n /= i;
+//   }
+// }
+// if (n > 1) {
+//   console.log(n);
+// }
+
+let n1 = 6;
+let n2 = 28;
+let sum1 = 0;
+let sum2 = 0;
+for (let i = 1; i < n1; i++) {
+  if (n1 % i === 0) {
+    sum1 += i;
   }
 }
-if (n > 1) {
-  console.log(n);
+for (let i = 1; i < n2; i++) {
+  if (n2 % i === 0) {
+    sum2 += i;
+  }
 }
+console.log(sum1 === sum2 ? "Friendly Pair" : "Not a Friendly Pair");
