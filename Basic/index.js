@@ -677,22 +677,34 @@ const prompt = require("prompt-sync")();
 // );
 
 // Question 63: Find count of all the numbers up to N that have exactly X divisors.
-function factorSeries(n) {
-  let count = 0;
-  for (let i = 1; i <= n; i++) {
-    if (n % i === 0) {
-      count++;
-    }
-  }
-  return count;
-}
+// function factorSeries(n) {
+//   let count = 0;
+//   for (let i = 1; i <= n; i++) {
+//     if (n % i === 0) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// let n = 10;
+// let x = 4;
+// let count = 0;
+// for (let i = 1; i <= n; i++) {
+//   if (factorSeries(i) === x) {
+//     count++;
+//   }
+// }
+// console.log(count);
 
-let n = 10;
-let x = 4;
-let count = 0;
-for (let i = 1; i <= n; i++) {
-  if (factorSeries(i) === x) {
-    count++;
+// Question 64: Find all prime factors of a given number.
+
+let n = 60;
+for (let i = 2; i <= Math.sqrt(n); i++) {
+  while (n % i === 0) {
+    console.log(i);
+    n /= i;
   }
 }
-console.log(count);
+if (n > 1) {
+  console.log(n);
+}
