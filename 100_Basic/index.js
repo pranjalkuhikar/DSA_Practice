@@ -29,6 +29,13 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(sum);
 
+let n = 5;
+let fact = 1;
+for (let i = 1; i <= n; i++) {
+  fact *= i;
+}
+console.log(fact);
+
 // let n1 = 12;
 // let n2 = 3;
 // if (n1 > n2) {
@@ -175,10 +182,10 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(a);
 
-let n1 = 2;
-let n2 = 3;
-let sum = 1;
-for (let i = 1; i <= 3; i++) {
-  sum *= n1;
-}
-console.log(sum);
+// let n1 = 2;
+// let n2 = 3;
+// let sum = 1;
+// for (let i = 1; i <= 3; i++) {
+//   sum *= n1;
+// }
+// console.log(sum);
