@@ -224,12 +224,22 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(temp === sum ? "Perfect Number" : "Not a Perfect Number");
 
-let n = 18;
+// let n = 18;
+// let sum = 0;
+// let temp = n;
+// while (n != 0) {
+//   let lastDigit = n % 10;
+//   sum += lastDigit;
+//   n = Math.floor(n / 10);
+// }
+// console.log(temp % sum === 0 ? "Harshad Number" : "Not a Harshad Number");
+
+let n = 12;
 let sum = 0;
 let temp = n;
-while (n != 0) {
-  let lastDigit = n % 10;
-  sum += lastDigit;
-  n = Math.floor(n / 10);
+for (let i = 1; i < n; i++) {
+  if (n % i === 0) {
+    sum += i;
+  }
 }
-console.log(temp % sum === 0 ? "Harshad Number" : "Not a Harshad Number");
+console.log(temp < sum ? "Abundant Number" : "Not a Abundant Number");
