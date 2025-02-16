@@ -67,22 +67,31 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(count === 2 ? "Prime Number" : "Not a Prime Number");
 
-function checkPrime(n) {
-  let count = 0;
-  for (let i = 1; i <= Math.sqrt(n); i++) {
-    if (n % i === 0) {
-      count++;
-      if (n / i != i) {
-        count++;
-      }
-    }
-  }
-  return count === 2;
+// function checkPrime(n) {
+//   let count = 0;
+//   for (let i = 1; i <= Math.sqrt(n); i++) {
+//     if (n % i === 0) {
+//       count++;
+//       if (n / i != i) {
+//         count++;
+//       }
+//     }
+//   }
+//   return count === 2;
+// }
+// let start = 2;
+// let end = 10;
+// for (let i = start; i <= end; i++) {
+//   if (checkPrime(i)) {
+//     console.log(i);
+//   }
+// }
+
+let n = 1234;
+let sum = 0;
+while (n != 0) {
+  let lastDigit = n % 10;
+  sum += lastDigit;
+  n = Math.floor(n / 10);
 }
-let start = 2;
-let end = 10;
-for (let i = start; i <= end; i++) {
-  if (checkPrime(i)) {
-    console.log(i);
-  }
-}
+console.log(sum);
