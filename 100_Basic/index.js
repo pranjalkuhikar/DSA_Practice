@@ -14,9 +14,17 @@ const prompt = require("prompt-sync")();
 //   console.log("Odd Number");
 // }
 
-let n = 5;
+// let n = 5;
+// let sum = 0;
+// for (let i = 1; i <= n; i++) {
+//   sum += i;
+// }
+// console.log(sum);
+
+let n1 = 12;
+let n2 = 15;
 let sum = 0;
-for (let i = 1; i <= n; i++) {
+for (let i = n1; i <= n2; i++) {
   sum += i;
 }
 console.log(sum);
