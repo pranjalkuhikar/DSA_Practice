@@ -1,5 +1,7 @@
 const prompt = require("prompt-sync")();
 
+// ---------------------------------------Topic-1---------------------------------------
+
 // Question 1: Check if a number is positive or negative.
 // let n = 5;
 // if (n >= 0) {
@@ -318,3 +320,19 @@ const prompt = require("prompt-sync")();
 // console.log(
 //   sum1 === n1 && sum2 === n2 ? "Friendly Pair" : "Not a Friendly Pair"
 // );
+
+// ---------------------------------------Topic-2---------------------------------------
+
+let a = 12;
+let b = 20;
+let num1 = a;
+let num2 = b;
+while (b != 0) {
+  let temp = b;
+  b = a % b;
+  a = temp;
+}
+let GCD = a;
+console.log(GCD);
+let LCM = (num1 * num2) / a;
+console.log(LCM);
