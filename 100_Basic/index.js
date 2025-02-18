@@ -337,7 +337,24 @@ const prompt = require("prompt-sync")();
 // let LCM = (num1 * num2) / a;
 // console.log(LCM);
 
-let a = 1 / 2;
-let b = 3 / 2;
-let c = a + b;
-console.log(parseFloat(c));
+// let a = 1 / 2;
+// let b = 3 / 2;
+// let c = a + b;
+// console.log(parseFloat(c));
+
+function reverseNumber(n) {
+  let rev = 0;
+  while (n != 0) {
+    let lastDigit = n % 10;
+    if (lastDigit === 0) {
+      lastDigit = 1;
+    }
+    rev = rev * 10 + lastDigit;
+    n = Math.floor(n / 10);
+  }
+  return rev;
+}
+
+let n = 706120678;
+let n1 = reverseNumber(n);
+console.log(reverseNumber(n1));
