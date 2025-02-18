@@ -358,6 +358,27 @@ const prompt = require("prompt-sync")();
 // let n1 = reverseNumber(n);
 // console.log(reverseNumber(n1));
 
-let r = 5;
-let area = Math.PI * r * r;
-console.log(Math.floor(area));
+// let r = 5;
+// let area = Math.PI * r * r;
+// console.log(Math.floor(area));
+
+function primeNumber(n) {
+  let count = 0;
+  for (let i = 1; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) {
+      count++;
+      if (n / i != i) {
+        count++;
+      }
+    }
+  }
+  return count === 2;
+}
+
+let start = 1;
+let end = 100;
+for (let i = start; i <= end; i++) {
+  if (primeNumber(i)) {
+    console.log(i);
+  }
+}
