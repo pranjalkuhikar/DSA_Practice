@@ -362,23 +362,30 @@ const prompt = require("prompt-sync")();
 // let area = Math.PI * r * r;
 // console.log(Math.floor(area));
 
-function primeNumber(n) {
-  let count = 0;
-  for (let i = 1; i <= Math.sqrt(n); i++) {
-    if (n % i === 0) {
-      count++;
-      if (n / i != i) {
-        count++;
-      }
-    }
-  }
-  return count === 2;
-}
+// function primeNumber(n) {
+//   let count = 0;
+//   for (let i = 1; i <= Math.sqrt(n); i++) {
+//     if (n % i === 0) {
+//       count++;
+//       if (n / i != i) {
+//         count++;
+//       }
+//     }
+//   }
+//   return count === 2;
+// }
+// let start = 1;
+// let end = 100;
+// for (let i = start; i <= end; i++) {
+//   if (primeNumber(i)) {
+//     console.log(i);
+//   }
+// }
 
-let start = 1;
-let end = 100;
-for (let i = start; i <= end; i++) {
-  if (primeNumber(i)) {
-    console.log(i);
-  }
+let n = 12345;
+let count = 0;
+while (n != 0) {
+  count++;
+  n = Math.floor(n / 10);
 }
+console.log(count);
