@@ -323,6 +323,7 @@ const prompt = require("prompt-sync")();
 
 // ---------------------------------------Topic-2---------------------------------------
 
+// Question 28: Calculate the Greatest Common Divisor (GCD) and Least Common Multiple (LCM) of two numbers.
 // let a = 12;
 // let b = 20;
 // let num1 = a;
@@ -337,11 +338,13 @@ const prompt = require("prompt-sync")();
 // let LCM = (num1 * num2) / a;
 // console.log(LCM);
 
+// Question 29: Calculate the sum of two fractions and print the result as a float
 // let a = 1 / 2;
 // let b = 3 / 2;
 // let c = a + b;
 // console.log(parseFloat(c));
 
+// Question 30: Reverse a number, replacing any zeros with ones, and print the reversed number.
 // function reverseNumber(n) {
 //   let rev = 0;
 //   while (n != 0) {
@@ -358,10 +361,12 @@ const prompt = require("prompt-sync")();
 // let n1 = reverseNumber(n);
 // console.log(reverseNumber(n1));
 
+// Question 31: Calculate the area of a circle with a given radius and print the result as an integer.
 // let r = 5;
 // let area = Math.PI * r * r;
 // console.log(Math.floor(area));
 
+// Question 32: Print all prime numbers in a given range.
 // function primeNumber(n) {
 //   let count = 0;
 //   for (let i = 1; i <= Math.sqrt(n); i++) {
@@ -382,10 +387,11 @@ const prompt = require("prompt-sync")();
 //   }
 // }
 
-let n = 12345;
-let count = 0;
-while (n != 0) {
-  count++;
-  n = Math.floor(n / 10);
-}
-console.log(count);
+// Question 33: Count the number of digits in a given number.
+// let n = 12345;
+// let count = 0;
+// while (n != 0) {
+//   count++;
+//   n = Math.floor(n / 10);
+// }
+// console.log(count);
