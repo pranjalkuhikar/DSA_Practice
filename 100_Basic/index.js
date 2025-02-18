@@ -342,19 +342,22 @@ const prompt = require("prompt-sync")();
 // let c = a + b;
 // console.log(parseFloat(c));
 
-function reverseNumber(n) {
-  let rev = 0;
-  while (n != 0) {
-    let lastDigit = n % 10;
-    if (lastDigit === 0) {
-      lastDigit = 1;
-    }
-    rev = rev * 10 + lastDigit;
-    n = Math.floor(n / 10);
-  }
-  return rev;
-}
+// function reverseNumber(n) {
+//   let rev = 0;
+//   while (n != 0) {
+//     let lastDigit = n % 10;
+//     if (lastDigit === 0) {
+//       lastDigit = 1;
+//     }
+//     rev = rev * 10 + lastDigit;
+//     n = Math.floor(n / 10);
+//   }
+//   return rev;
+// }
+// let n = 706120678;
+// let n1 = reverseNumber(n);
+// console.log(reverseNumber(n1));
 
-let n = 706120678;
-let n1 = reverseNumber(n);
-console.log(reverseNumber(n1));
+let r = 5;
+let area = Math.PI * r * r;
+console.log(Math.floor(area));
