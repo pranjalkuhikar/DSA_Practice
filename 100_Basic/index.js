@@ -323,16 +323,21 @@ const prompt = require("prompt-sync")();
 
 // ---------------------------------------Topic-2---------------------------------------
 
-let a = 12;
-let b = 20;
-let num1 = a;
-let num2 = b;
-while (b != 0) {
-  let temp = b;
-  b = a % b;
-  a = temp;
-}
-let GCD = a;
-console.log(GCD);
-let LCM = (num1 * num2) / a;
-console.log(LCM);
+// let a = 12;
+// let b = 20;
+// let num1 = a;
+// let num2 = b;
+// while (b != 0) {
+//   let temp = b;
+//   b = a % b;
+//   a = temp;
+// }
+// let GCD = a;
+// console.log(GCD);
+// let LCM = (num1 * num2) / a;
+// console.log(LCM);
+
+let a = 1 / 2;
+let b = 3 / 2;
+let c = a + b;
+console.log(parseFloat(c));
