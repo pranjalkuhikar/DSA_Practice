@@ -208,3 +208,104 @@
 // let n = 6758;
 // let digitalRoot = 1 + ((n - 1) % 9);
 // console.log(digitalRoot);
+
+// let arr = [1, 2, 3, 4, 5];
+// let newArr = [];
+// for (let i = arr.length - 1; i >= 0; i--) {
+//   newArr.push(arr[i]);
+// }
+// console.log(newArr);
+// for (let i = 0; i < Math.floor(arr.length / 2); i++) {
+//   [arr[i], arr[arr.length - 1 - i]] = [arr[arr.length - 1 - i], arr[i]];
+// }
+// console.log(arr);
+
+// let arr = [1, 2, 1];
+// let isPalindrome = true;
+// for (let i = 0; i < Math.floor(arr.length - 1); i++) {
+//   if (arr[i] != arr[arr.length - 1 - i]) {
+//     isPalindrome = false;
+//   }
+// }
+// console.log(isPalindrome ? "P" : "NP");
+
+// let arr = [1, 2, 3, 4, 5];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   sum += arr[i];
+// }
+// console.log(sum);
+
+// let arr = [1, -23, 56, -29, 36, 9, -69];
+// let positive = [];
+// let negative = [];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > 0) positive.push(arr[i]);
+//   else negative.push(arr[i]);
+// }
+// console.log(positive, negative);
+
+// let arr = [1, 2, 3, 4, 5];
+// let k = 4;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] === k) {
+//     console.log(`found at index ${i}`);
+//   }
+// }
+
+// let arr = [1, 2, 3, 4, 5];
+// let k = 5;
+// let left = 0;
+// let right = arr.length;
+// while (left <= right) {
+//   let mid = Math.floor((left + right) / 2);
+//   if (arr[mid] === k) {
+//     console.log(`found at index ${mid}`);
+//     break;
+//   } else if (k > arr[mid]) left = mid + 1;
+//   else right = mid - 1;
+// }
+
+// let arr = [1, 2, 3, 7, 4, 4];
+// let max = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   }
+// }
+// console.log(max);
+
+// let arr = [1, 2, 3, 7, 4, 4];
+// let max = arr[0];
+// let sMax = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     sMax = max;
+//     max = arr[i];
+//   } else if (arr[i] > sMax && max != arr[i]) {
+//     sMax = arr[i];
+//   }
+// }
+// console.log(max, sMax);
+
+// let arr = [1, 2, 3, 7, 4, 4];
+// let min = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] < min) {
+//     min = arr[i];
+//   }
+// }
+// console.log(min);
+
+// let arr = [1, 2, 3, 7, 4, 4];
+// let min = Infinity;
+// let sMin = Infinity;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] < min) {
+//     sMin = min;
+//     min = arr[i];
+//   } else if (arr[i] < sMin && min != arr[i]) {
+//     sMin = arr[i];
+//   }
+// }
+// console.log(min, sMin);
