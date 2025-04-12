@@ -1,4 +1,4 @@
-let n = 23;
+// let n = 23;
 
 // for (let i = 0; i < n; i++) {
 //   console.log(i);
@@ -102,3 +102,48 @@ let n = 23;
 // let lcm = (temp1 * temp2) / a;
 // console.log(lcm);
 
+// let copy = n;
+// let rev = 0;
+// while (n != 0) {
+//   let lastDigit = n % 10;
+//   rev = rev * 10 + lastDigit;
+//   n = Math.floor(n / 10);
+// }
+// console.log(rev);
+// console.log(copy === rev ? "P" : "NP");
+
+// let n = 29;
+// let copy = n;
+// let sum = 0;
+// while (n != 0) {
+//   let lastDigit = n % 10;
+//   sum += lastDigit;
+//   n = Math.floor(n / 10);
+// }
+// console.log(copy % sum === 0 ? "H" : "NH");
+
+// let n = 6;
+// let copy = n;
+// let sum = 0;
+// for (let i = 1; i < n; i++) {
+//   if (n % i === 0) {
+//     sum += i;
+//   }
+// }
+// console.log(copy === sum ? "P" : "NP");
+
+// let n = 407;
+// let copy = n;
+// let temp = n;
+// let count = 0;
+// let sum = 0;
+// while (copy != 0) {
+//   count++;
+//   copy = Math.floor(copy / 10);
+// }
+// while (n != 0) {
+//   let lastDigit = n % 10;
+//   sum += Math.pow(lastDigit, count);
+//   n = Math.floor(n / 10);
+// }
+// console.log(sum === temp ? "A" : "NA");
