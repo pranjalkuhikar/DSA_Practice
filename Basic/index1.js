@@ -147,3 +147,64 @@
 //   n = Math.floor(n / 10);
 // }
 // console.log(sum === temp ? "A" : "NA");
+
+// let n = 145;
+// let sum = 0;
+// let copy = n;
+// while (n != 0) {
+//   let lastDigit = n % 10;
+//   let fact = 1;
+//   for (let i = 1; i <= lastDigit; i++) {
+//     fact *= i;
+//   }
+//   sum += fact;
+//   n = Math.floor(n / 10);
+// }
+// console.log(sum === copy ? "S" : "NS");
+
+// let n = 25;
+// let copy = n;
+// let sq = n * n;
+// let count = 0;
+// while (n != 0) {
+//   count++;
+//   n = Math.floor(n / 10);
+// }
+// let ans = sq % Math.pow(10, count);
+// console.log(ans === copy ? "A" : "NA");
+
+// let n = 12;
+// let sum = 0;
+// for (let i = 1; i < n; i++) {
+//   if (n % i === 0) {
+//     sum += i;
+//   }
+// }
+// console.log(sum > n ? "A" : "NA");
+
+// let n = 9;
+// let copy = n;
+// let sq = n * n;
+// let sum = 0;
+// while (sq != 0) {
+//   let lastDigit = sq % 10;
+//   sum += lastDigit;
+//   sq = Math.floor(sq / 10);
+// }
+// console.log(sum === copy ? "N" : "NN");
+
+// let n = 6758;
+// while (n >= 10) {
+//   let sum = 0;
+//   while (n != 0) {
+//     let lastDigit = n % 10;
+//     sum += lastDigit;
+//     n = Math.floor(n / 10);
+//   }
+//   n = sum;
+// }
+// console.log(n);
+
+// let n = 6758;
+// let digitalRoot = 1 + ((n - 1) % 9);
+// console.log(digitalRoot);
