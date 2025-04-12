@@ -210,13 +210,25 @@
 // console.log(digitalRoot);
 
 // let arr = [1, 2, 3, 4, 5];
+
 // let newArr = [];
 // for (let i = arr.length - 1; i >= 0; i--) {
 //   newArr.push(arr[i]);
 // }
 // console.log(newArr);
+
 // for (let i = 0; i < Math.floor(arr.length / 2); i++) {
 //   [arr[i], arr[arr.length - 1 - i]] = [arr[arr.length - 1 - i], arr[i]];
+// }
+// console.log(arr);
+
+// let arr = [1, 2, 3, 4, 5];
+// let i = 0;
+// let j = arr.length - 1;
+// while (i < j) {
+//   [arr[i], arr[j]] = [arr[j], arr[i]];
+//   i++;
+//   j--;
 // }
 // console.log(arr);
 
@@ -309,3 +321,40 @@
 //   }
 // }
 // console.log(min, sMin);
+
+// let arr = [1, 2, 3, 4, 5];
+// let temp = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//   arr[i] = arr[i + 1];
+// }
+// arr[arr.length - 1] = temp;
+// console.log(arr);
+
+// let arr = [1, 2, 3, 4, 5];
+// let temp = arr[arr.length - 1];
+// for (let i = arr.length - 1; i > 0; i--) {
+//   arr[i] = arr[i - 1];
+// }
+// arr[0] = temp;
+// console.log(arr);
+
+// function reverse(arr, i, j) {
+//   while (i < j) {
+//     [arr[i], arr[j]] = [arr[j], arr[i]];
+//     i++;
+//     j--;
+//   }
+// }
+// let arr = [1, 2, 3, 4, 5];
+// let k = 1;
+// // Left rotation by k
+// reverse(arr, 0, k - 1);
+// reverse(arr, k, arr.length - 1);
+// reverse(arr, 0, arr.length - 1);
+// console.log(arr);
+
+// // right rotation by k
+// reverse(arr, arr.length - k, arr.length - 1);
+// reverse(arr, 0, arr.length - k - 1);
+// reverse(arr, 0, arr.length - 1);
+// console.log(arr);
