@@ -370,3 +370,33 @@
 //   i++;
 // }
 // console.log(arr);
+
+// let arr = [1, 2, 1];
+
+// let newArr = [];
+// for (let i = arr.length - 1; i >= 0; i--) {
+//   newArr.push(arr[i]);
+// }
+// console.log(newArr);
+
+// for (let i = 0; i < Math.floor(arr.length / 2); i++) {
+//   [arr[i], arr[arr.length - 1 - i]] = [arr[arr.length - 1 - i], arr[i]];
+// }
+// console.log(arr);
+
+// let i = 0;
+// let j = arr.length - 1;
+// while (i < j) {
+//   [arr[i], arr[j]] = [arr[j], arr[i]];
+//   i++;
+//   j--;
+// }
+// console.log(arr);
+
+// let isPalindrome = true;
+// for (let i = 0; i < Math.floor(arr.length / 2); i++) {
+//   if (arr[i] != arr[arr.length - 1 - i]) {
+//     isPalindrome = false;
+//   }
+// }
+// console.log(isPalindrome ? "P" : "NP");
