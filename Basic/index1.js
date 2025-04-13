@@ -457,3 +457,35 @@
 // }
 // ans = Math.max(count, ans);
 // console.log(ans);
+
+// let arr = [1, 2, 3, 4, 5];
+// let target = 4;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] === target) {
+//     console.log(`found at index ${i}`);
+//   }
+// }
+
+// let left = 0;
+// let right = arr.length - 1;
+// while (left <= right) {
+//   let mid = Math.floor((left + right) / 2);
+//   if (arr[mid] === target) {
+//     console.log(`found at index ${mid}`);
+//     break;
+//   } else if (target > arr[mid]) {
+//     left = mid + 1;
+//   } else {
+//     right = mid - 1;
+//   }
+// }
+
+// let arr = [3, 6, 2, 7, 12, 1];
+// for (let i = 0; i < arr.length - 1; i++) {
+//   for (let j = 0; j < arr.length - 1 - i; j++) {
+//     if (arr[j] > arr[j + 1]) {
+//       [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+//     }
+//   }
+// }
+// console.log(arr);
