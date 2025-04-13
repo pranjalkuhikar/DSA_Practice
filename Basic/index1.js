@@ -371,6 +371,17 @@
 // }
 // console.log(arr);
 
+// let n = 25;
+// let copy = n;
+// let sq = n * n;
+// let count = 0;
+// while (n != 0) {
+//   count++;
+//   n = Math.floor(n / 10);
+// }
+// let ans = sq % Math.pow(10, count);
+// console.log(ans === copy ? "A" : "NA");
+
 // let arr = [1, 2, 1];
 
 // let newArr = [];
@@ -400,3 +411,49 @@
 //   }
 // }
 // console.log(isPalindrome ? "P" : "NP");
+
+// let arr = [2, -56, 34, 78, -3, 2, -3];
+// let pos = [];
+// let neg = [];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > 0) pos.push(arr[i]);
+//   else neg.push(arr[i]);
+// }
+// console.log(pos, neg);
+
+// let i = 0;
+// let j = 0;
+// while (i < arr.length) {
+//   if (arr[i] > 0) {
+//     [arr[i], arr[j]] = [arr[j], arr[i]];
+//     j++;
+//   }
+//   i++;
+// }
+// console.log(arr);
+
+// let arr = [1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1];
+// let i = 0;
+// let j = 0;
+// while (i < arr.length) {
+//   if (arr[i] === 0) {
+//     [arr[i], arr[j]] = [arr[j], arr[i]];
+//     j++;
+//   }
+//   i++;
+// }
+// console.log(arr);
+
+// let arr = [1, 1, 1, 0, 1, 1, 1, 1];
+// let count = 0;
+// let ans = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] === 1) {
+//     count++;
+//   } else {
+//     ans = Math.max(count, ans);
+//     count = 0;
+//   }
+// }
+// ans = Math.max(count, ans);
+// console.log(ans);
