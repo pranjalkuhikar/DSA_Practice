@@ -358,3 +358,15 @@
 // reverse(arr, 0, arr.length - k - 1);
 // reverse(arr, 0, arr.length - 1);
 // console.log(arr);
+
+// let arr = [1, 0, 0, 1, 1, 0];
+// let i = 0;
+// let j = 0;
+// while (i < arr.length) {
+//   if (arr[i] === 0) {
+//     [arr[i], arr[j]] = [arr[j], arr[i]];
+//     j++;
+//   }
+//   i++;
+// }
+// console.log(arr);
