@@ -638,3 +638,49 @@
 //     console.log(arr[i][j]);
 //   }
 // }
+
+// let arr = [1, 2, 3];
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = i; j < arr.length; j++) {
+//     let sub = arr.slice(i, j + 1);
+//     console.log(sub);
+//   }
+// }
+
+// let arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+// let maxSum = arr[0];
+// let startIdx = 0;
+// let endIdx = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//   let curr = 0;
+//   for (let j = i; j < arr.length; j++) {
+//     curr += arr[j];
+//     if (curr > maxSum) {
+//       maxSum = curr;
+//       startIdx = i;
+//       endIdx = j;
+//     }
+//   }
+// }
+// console.log(maxSum);
+// console.log(arr.slice(startIdx, endIdx + 1));
+
+// let arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+// let maxSum = arr[0];
+// let curr = 0;
+// let startIdx = 0;
+// let endIdx = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   curr += arr[i];
+//   if (curr > maxSum) {
+//     maxSum = curr;
+//     endIdx = i;
+//   }
+//   if (curr < 0) {
+//     curr = 0;
+//     startIdx = i + 1;
+//   }
+// }
+// console.log(maxSum);
+// console.log(arr.slice(startIdx, endIdx + 1));
