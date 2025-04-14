@@ -559,3 +559,71 @@
 // reverse(arr, 0, arr.length - 1);
 
 // console.log(arr);
+
+// let n = 25;
+// let copy = n;
+// let sq = n * n;
+// let count = 0;
+// while (n != 0) {
+//   count++;
+//   n = Math.floor(n / 10);
+// }
+// let ans = sq % Math.pow(10, count);
+// console.log(copy === ans ? "A" : "NA");
+
+// let arr = [5, 3, 8, 23, 1, 2, 4];
+// for (let i = 0; i < arr.length - 1; i++) {
+//   for (let j = 0; j < arr.length - 1 - i; j++) {
+//     if (arr[j] > arr[j + 1]) {
+//       [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+//     }
+//   }
+// }
+// console.log(arr);
+
+// let arr = [0, 5, 0, 0, 1, 2, 0];
+// let i = 0;
+// let j = 0;
+// while (i < arr.length) {
+//   if (arr[i] === 0) {
+//     [arr[i], arr[j]] = [arr[j], arr[i]];
+//     j++;
+//   }
+//   i++;
+// }
+// console.log(arr);
+
+// let arr = [0, 0, 1, 1, 0, 1];
+// let count = 0;
+// let ans = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] === 1) {
+//     count++;
+//   } else {
+//     ans = Math.max(ans, count);
+//     count = 0;
+//   }
+// }
+// ans = Math.max(ans, count);
+// console.log(ans);
+
+// function reverse(arr, i, j) {
+//   while (i < j) {
+//     [arr[i], arr[j]] = [arr[j], arr[i]];
+//     i++;
+//     j--;
+//   }
+// }
+// let arr = [1, 2, 3, 4, 5];
+// let k = 2;
+// k = k % arr.length;
+
+// reverse(arr, 0, k - 1);
+// reverse(arr, k, arr.length - 1);
+// reverse(arr, 0, arr.length - 1);
+// console.log(arr);
+
+// reverse(arr, arr.length - k, arr.length - 1);
+// reverse(arr, 0, arr.length - 1 - k);
+// reverse(arr, 0, arr.length - 1);
+// console.log(arr);
