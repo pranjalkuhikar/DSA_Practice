@@ -684,3 +684,40 @@
 // }
 // console.log(maxSum);
 // console.log(arr.slice(startIdx, endIdx + 1));
+
+// let arr = [1, 2, 3, 4, 5];
+// let k = 5;
+// let count = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//   let curr = 0;
+//   for (let j = i; j < arr.length; j++) {
+//     curr += arr[j];
+//     if (curr === k) {
+//       count++;
+//     }
+//   }
+// }
+// console.log(count);
+
+// let arr = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 0; j < arr[i].length; j++) {
+//     process.stdout.write(`${arr[i][j]}`);
+//   }
+//   console.log();
+// }
+
+// let leftSum = 0;
+// let rightSum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 0; j < arr[i].length; j++) {
+//     if (i === j) leftSum += arr[i][j];
+//     if (i + j === arr.length - 1) rightSum += arr[i][j];
+//   }
+// }
+// console.log(leftSum, rightSum);
