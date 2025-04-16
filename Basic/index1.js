@@ -794,3 +794,59 @@
 //   }
 // }
 // console.log(temp);
+
+// let str = "pranjal kuhikar";
+// let arr = new Array(256).fill(0);
+// for (let i = 0; i < str.length; i++) {
+//   let ascii = str.charCodeAt(i);
+//   if (str[i] != " ") {
+//     arr[ascii]++;
+//   }
+// }
+// console.log(arr);
+// let max = 0;
+// let char = "";
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//     char = String.fromCharCode(i);
+//   }
+// }
+// console.log(char, max);
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > 0) {
+//     console.log(`${String.fromCharCode(i)}: ${arr[i]}`);
+//   }
+// }
+
+// let str = "pranjal kuhikar";
+// let arr = new Array(256).fill(0);
+// let newArr = [];
+
+// for (let i = 0; i < str.length; i++) {
+//   let ascii = str.charCodeAt(i);
+//   if (str[i] !== " " && !newArr.includes(str[i])) {
+//     arr[ascii]++;
+//     newArr.push(str[i]);
+//   } else if (str[i] !== " ") {
+//     arr[ascii]++;
+//   }
+// }
+
+// for (let i = 0; i < newArr.length; i++) {
+//   console.log(`${newArr[i]}: ${arr[newArr[i].charCodeAt(0)]}`);
+// }
+
+// let str1 = "pranjal";
+// let str2 = "kuhikarwer";
+// for (let i = 0; i < Math.max(str1.length, str2.length); i++) {
+//   process.stdout.write((str1[i] || "") + (str2[i] || ""));
+// }
+
+// let str = "P r a n j a l";
+// for (let i = 0; i < str.length; i++) {
+//   if (str[i] != " ") {
+//     process.stdout.write(str[i]);
+//   }
+// }
