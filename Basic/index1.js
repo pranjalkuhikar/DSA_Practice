@@ -759,3 +759,38 @@
 //   }
 // }
 // console.log(arr);
+
+// let str = "level";
+// console.log(str + str.length);
+// for (let i = 0; i < str.length - 1; i++) {
+//   console.log(str[i]);
+// }
+// for (let i = str.length - 1; i >= 0; i--) {
+//   console.log(str[i]);
+// }
+// let isPalindrome = true;
+// for (let i = 0; i < Math.floor(str.length / 2); i++) {
+//   if (str[i] != str[str.length - 1 - i]) {
+//     isPalindrome = false;
+//   }
+// }
+// console.log(isPalindrome);
+// for (let i = 0; i < str.length; i++) {
+//   process.stdout.write(str[i] + " ");
+// }
+
+// let str1 = "PK";
+// let str2 = "BK";
+// console.log(str1 === str2);
+// for (let i = 0; i < str1.length; i++) {
+//   process.stdout.write(str1[i] + str2[i]);
+// }
+
+// let str = "Pranjal kuhikar";
+// let temp = "";
+// for (let i = 0; i < str.length; i++) {
+//   if (str[i] != "") {
+//     temp += str[i];
+//   }
+// }
+// console.log(temp);
