@@ -851,7 +851,7 @@
 //   }
 // }
 
-let str = "12 ka 4, 14 ka 1, KabyeaS ";
+// let str = "12 ka 4, 4 ka 1, my name is pranjal ";
 // let alpha = 0;
 // let space = 0;
 // let special = 0;
@@ -886,3 +886,21 @@ let str = "12 ka 4, 14 ka 1, KabyeaS ";
 //   }
 // }
 // console.log(vowel, space, constant);
+
+// let str = "hello bhai kaise ho";
+// let arr = str.split(" ");
+// let ans = "";
+// for (let i = 0; i < arr.length; i++) {
+//   ans =
+//     ans +
+//     arr[i][0].toUpperCase() +
+//     arr[i].slice(1, arr.length) +
+//     arr[i][arr[i].length - 1].toUpperCase() +
+//     " ";
+//   console.log(
+//     arr[i][0].toUpperCase() +
+//       arr[i].slice(1, arr.length) +
+//       arr[i][arr[i].length - 1].toUpperCase()
+//   );
+// }
+// console.log(ans);
