@@ -928,3 +928,12 @@
 // for (let a of set) {
 //   console.log(a);
 // }
+
+// let d = /\d+/g;
+// console.log(d.test("123"));
+// console.log(d.test("123a"));
+// console.log(d.test("a123"));
+// console.log(d.test("a123a"));
+// console.log(d.test("a123a123"));
+// console.log(d.test("a123a123a"));
+// console.log(d.test("a123a123a123"));
