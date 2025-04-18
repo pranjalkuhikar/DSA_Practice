@@ -904,3 +904,27 @@
 //   );
 // }
 // console.log(ans);
+
+// let s = "level";
+// let t = "level";
+// let arr = new Array(256).fill(0);
+// let isAna = true;
+// if (s.length != t.length) console.log("Not");
+// for (let i = 0; i < s.length; i++) {
+//   arr[s.charCodeAt(i)]++;
+//   arr[t.charCodeAt(i)]--;
+// }
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] != 0) {
+//     isAna = false;
+//   }
+// }
+// console.log(isAna ? "Yes" : "No");
+
+// let set = new Set();
+// set.add(1);
+// set.add(2);
+// console.log(set);
+// for (let a of set) {
+//   console.log(a);
+// }
