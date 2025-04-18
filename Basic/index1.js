@@ -850,3 +850,39 @@
 //     process.stdout.write(str[i]);
 //   }
 // }
+
+let str = "12 ka 4, 14 ka 1, KabyeaS ";
+// let alpha = 0;
+// let space = 0;
+// let special = 0;
+// for (let i = 0; i < str.length; i++) {
+//   let ascii = str.charCodeAt(i);
+//   if ((ascii >= 65 && ascii <= 90) || (ascii >= 97 && ascii <= 122)) {
+//     alpha++;
+//   } else if (str[i] === " ") {
+//     space++;
+//   } else if ((ascii >= 33 && ascii <= 47) || (ascii >= 58 && ascii <= 64)) {
+//     special++;
+//   }
+// }
+// console.log(alpha, space, special);
+
+// let vowel = 0;
+// let constant = 0;
+// let space = 0;
+// for (let i = 0; i < str.length; i++) {
+//   if (
+//     str[i] === "a" ||
+//     str[i] === "e" ||
+//     str[i] === "i" ||
+//     str[i] === "o" ||
+//     str[i] === "u"
+//   ) {
+//     vowel++;
+//   } else if (str[i] === " ") {
+//     space++;
+//   } else {
+//     constant++;
+//   }
+// }
+// console.log(vowel, space, constant);
