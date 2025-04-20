@@ -937,3 +937,26 @@
 // console.log(d.test("a123a123"));
 // console.log(d.test("a123a123a"));
 // console.log(d.test("a123a123a123"));
+
+// let arr = [1, 2, 4, 2, 2, 2, 6, 1, 1, 10];
+// let map = new Map();
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (map.has(arr[i])) {
+//     map.set(arr[i], map.get(arr[i]) + 1);
+//   } else {
+//     map.set(arr[i], 1);
+//   }
+//   map.set(arr[i], (map.get(arr[i]) || 0) + 1);
+// }
+// console.log(map);
+
+// let arr = [2, 7, 11, 15];
+// let target = 9;
+// let map = new Map();
+// for (let i = 0; i < arr.length; i++) {
+//   map.set(arr[i], (map.get(arr[i]) || 0) + 1);
+// }
+// console.log(map);
+// for (let i of map.keys()) {
+// }
