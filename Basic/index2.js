@@ -223,3 +223,63 @@
 //   n = sum;
 // }
 // console.log(n);
+
+let n = 5;
+// for (let i = 0; i < n; i++) {
+//   for (let j = 0; j < n; j++) {
+//     process.stdout.write("*");
+//   }
+//   console.log();
+// }
+// for (let i = 0; i <= n; i++) {
+//   for (let j = 0; j <= i; j++) {
+//     process.stdout.write("*");
+//   }
+//   console.log();
+// }
+// for (let i = 0; i < n; i++) {
+//   for (let j = i; j < n; j++) {
+//     process.stdout.write("*");
+//   }
+//   console.log();
+// }
+// for (let i = 0; i <= n; i++) {
+//   for (let k = i; k < n; k++) {
+//     process.stdout.write(" ");
+//   }
+//   for (let j = 0; j <= i; j++) {
+//     process.stdout.write("*");
+//   }
+//   console.log();
+// }
+// for (let i = 0; i < n; i++) {
+//   for (let k = 0; k <= i; k++) {
+//     process.stdout.write(" ");
+//   }
+//   for (let j = i; j < n; j++) {
+//     process.stdout.write("*");
+//   }
+//   console.log();
+// }
+
+// for (let i = 0; i < n; i++) {
+//   for (let j = 0; j < n; j++) {
+//     if (i === j || i + j == n - 1) {
+//       process.stdout.write("*");
+//     } else {
+//       process.stdout.write(" ");
+//     }
+//   }
+//   console.log();
+// }
+
+// for (let i = 0; i < n; i++) {
+//   for (let j = 0; j < 2 * n - 1; j++) {
+//     if (i == j || i + j == 2 * n - 2) {
+//       process.stdout.write("*");
+//     } else {
+//       process.stdout.write(" ");
+//     }
+//   }
+//   console.log();
+// }
