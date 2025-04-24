@@ -283,3 +283,29 @@ let n = 5;
 //   }
 //   console.log();
 // }
+
+// let arr = [1, 2, 3, 4, 5];
+// let newArr = [];
+// for (let i = arr.length - 1; i >= 0; i--) {
+//   console.log(arr[i]);
+//   newArr.push(arr[i]);
+// }
+// console.log(newArr);
+// let i = 0;
+// let j = arr.length - 1;
+// while (i < j) {
+//   [arr[i], arr[j]] = [arr[j], arr[i]];
+//   i++;
+//   j--;
+// }
+// console.log(arr);
+
+// let arr = [1, 2, 1];
+// let isPali = true;
+// for (let i = 0; i < Math.floor(Math.sqrt(n)); i++) {
+//   if (arr[i] != arr[arr.length - 1 - i]) {
+//     isPali = false;
+//     break;
+//   }
+// }
+// console.log(isPali);
