@@ -309,3 +309,86 @@ let n = 5;
 //   }
 // }
 // console.log(isPali);
+
+// let arr = [4, 2, 3554, -21, 12, -2];
+// let pos = [];
+// let neg = [];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > 0) pos.push(arr[i]);
+//   else neg.push(arr[i]);
+// }
+// console.log(pos, neg);
+
+// let arr = [3.6432, 23, 22, 61, 3, 61, 0];
+// let max = 0;
+// let sMax = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     sMax = max;
+//     max = arr[i];
+//   } else if (arr[i] > sMax && max != arr[i]) {
+//     sMax = arr[i];
+//   }
+// }
+// console.log(max, sMax);
+
+// let arr = [3.6432, 23, 22, 61, 3, 61, 1, 1];
+// let min = Infinity;
+// let sMin = Infinity;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] < min) {
+//     sMin = min;
+//     min = arr[i];
+//   } else if (arr[i] < sMin && min != arr[i]) {
+//     sMin = arr[i];
+//   }
+// }
+// console.log(min, sMin);
+
+// let arr = [3.6432, 23, 22, 61, 3, 61, 1, 1];
+// let arr = [1, 2, 3, 4, 5];
+// let isSorted = true;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > arr[i + 1]) {
+//     isSorted = false;
+//     break;
+//   }
+// }
+// console.log(isSorted);
+
+// let arr = [1, 2, 3, 4, 5];
+// let temp = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//   arr[i] = arr[i + 1];
+// }
+// arr[arr.length - 1] = temp;
+// console.log(arr);
+
+// let arr = [1, 2, 3, 4, 5];
+// let temp = arr[arr.length - 1];
+// for (let i = arr.length - 1; i >= 0; i--) {
+//   arr[i] = arr[i - 1];
+// }
+// arr[0] = temp;
+// console.log(arr);
+
+// function reverse(arr, i, j) {
+//   while (i < j) {
+//     [arr[i], arr[j]] = [arr[j], arr[i]];
+//     i++;
+//     j--;
+//   }
+// }
+
+// let arr = [1, 2, 3, 4, 5];
+// let k = 2;
+// k = k % arr.length;
+// reverse(arr, 0, k - 1);
+// reverse(arr, k, arr.length - 1);
+// reverse(arr, 0, arr.length - 1);
+
+// reverse(arr, k + 1, arr.length - 1);
+// reverse(arr, 0, k);
+// reverse(arr, 0, arr.length - 1);
+
+// console.log(arr);
