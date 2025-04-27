@@ -607,3 +607,18 @@
 //   }
 // }
 // console.log(count);
+
+// let str = "PranjalKuhikar";
+// let ans = "";
+// for (let i = 0; i < str.length; i++) {
+//   let ascii = str.charCodeAt(i);
+//   if (ascii >= 65 && ascii <= 90) {
+//     ans += String.fromCharCode(ascii + 32);
+//   } else if (ascii >= 97 && ascii <= 122) {
+//     ans += String.fromCharCode(ascii - 32);
+//   }
+// }
+// console.log(ans);
+
+// let str = "hello world";
+// for (let i = 0; i < str.length; i++) {}
