@@ -491,3 +491,41 @@ let n = 5;
 // reverse(arr, 0, k);
 // reverse(arr, 0, arr.length - 1);
 // console.log(arr);
+
+// let arr = [3, 2, 5, 0, 1, 2, 0];
+// let i = 0;
+// let j = 0;
+// while (i < arr.length) {
+//   if (arr[i] <= 0) {
+//     [arr[i], arr[j]] = [arr[j], arr[i]];
+//     j++;
+//   }
+//   i++;
+// }
+// console.log(arr);
+
+// let arr = [1, 5, -2, 3, 5, -21, -5, 1, -21];
+// let i = 0;
+// let j = 0;
+// while (i < arr.length) {
+//   if (arr[i] < 0) {
+//     [arr[i], arr[j]] = [arr[j], arr[i]];
+//     j++;
+//   }
+//   i++;
+// }
+// console.log(arr);
+
+// let arr = [1, 1, 1, 1, 2, 1, 1, 1, 0, 1, 1];
+// let ans = 0;
+// let count = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] === 1) {
+//     count++;
+//   } else {
+//     ans = Math.max(ans, count);
+//     count = 0;
+//   }
+// }
+// ans = Math.max(ans, count);
+// console.log(ans);
