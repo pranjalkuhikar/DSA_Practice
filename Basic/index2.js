@@ -224,7 +224,7 @@
 // }
 // console.log(n);
 
-let n = 5;
+// let n = 5;
 // for (let i = 0; i < n; i++) {
 //   for (let j = 0; j < n; j++) {
 //     process.stdout.write("*");
@@ -529,3 +529,81 @@ let n = 5;
 // }
 // ans = Math.max(ans, count);
 // console.log(ans);
+
+// let str = "level";
+// for (let i = 0; i < str.length; i++) {
+//   console.log(str[i]);
+// }
+// for (let i = str.length - 1; i >= 0; i--) {
+//   process.stdout.write(str[i]);
+// }
+// let isPali = true;
+// for (let i = 0; i < Math.floor(str.length / 2); i++) {
+//   if (str[i] != str[str.length - 1 - i]) {
+//     isPali = false;
+//     break;
+//   }
+// }
+// console.log(isPali);
+// for (let i = 0; i < str.length; i++) {
+//   process.stdout.write(`${str[i]} `);
+// }
+
+// let str1 = "level";
+// let str2 = "levelling";
+// console.log(str1 === str2);
+// for (let i = 0; i < Math.max(str1.length, str2.length); i++) {
+//   process.stdout.write(`${str1[i] || ""}${str2[i] || ""}`);
+// }
+
+// let str = "P r a n j a l";
+// for (let i = 0; i < str.length; i++) {
+//   if (str[i] != " ") {
+//     process.stdout.write(str[i]);
+//   }
+// }
+
+// let str = "Pranjal123@gmail.com ";
+// let alpha = 0;
+// let num = 0;
+// let spe = 0;
+// for (let i = 0; i < str.length; i++) {
+//   let ascii = str.charCodeAt(i);
+//   if ((ascii >= 65 && ascii <= 90) || (ascii >= 97 && ascii <= 122)) {
+//     alpha++;
+//   } else if (ascii >= 48 && ascii <= 57) {
+//     num++;
+//   } else {
+//     spe++;
+//   }
+// }
+// console.log(alpha, num, spe);
+// let vowel = 0;
+// let con = 0;
+// let space = 0;
+// for (let i = 0; i < str.length; i++) {
+//   if (
+//     str[i] === "a" ||
+//     str[i] === "e" ||
+//     str[i] === "i" ||
+//     str[i] === "o" ||
+//     str[i] === "u"
+//   ) {
+//     vowel++;
+//   } else if (str[i] === " ") {
+//     space++;
+//   } else {
+//     con++;
+//   }
+// }
+// console.log(vowel, space, con);
+
+// let str = ["dte", "attitude", "attribute"];
+// let prefix = "att";
+// let count = 0;
+// for (let i = 0; i < str.length; i++) {
+//   if (str[i].includes(prefix)) {
+//     count++;
+//   }
+// }
+// console.log(count);
