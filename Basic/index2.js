@@ -392,3 +392,102 @@ let n = 5;
 // reverse(arr, 0, arr.length - 1);
 
 // console.log(arr);
+
+// let arr = [1, 2, 3, 4, 5];
+// let newArr = [];
+// for (let i = arr.length - 1; i >= 0; i--) {
+//   newArr.push(arr[i]);
+// }
+// console.log(newArr);
+// for (let i = arr.length - 1; i >= 0; i--) {
+//   console.log(arr[i]);
+// }
+// for (let i = 0; i < Math.floor(arr.length / 2); i++) {
+//   [arr[i], arr[arr.length - 1 - i]] = [arr[arr.length - 1 - i], arr[i]];
+// }
+// console.log(arr);
+// let isPali = true;
+// for (let i = 0; i < Math.floor(arr.length / 2); i++) {
+//   if (arr[i] != arr[arr.length - 1 - i]) {
+//     isPali = false;
+//     break;
+//   }
+// }
+// console.log(isPali);
+
+// let arr = [1, 5, -2, 3, , 5, -21, -5, 1, -21];
+// let pos = [];
+// let neg = [];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > 0) {
+//     pos.push(arr[i]);
+//   } else {
+//     neg.push(arr[i]);
+//   }
+// }
+// console.log(pos, neg);
+
+// let max = -Infinity;
+// let sMax = -Infinity;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     sMax = max;
+//     max = arr[i];
+//   } else if (arr[i] > sMax && max != arr[i]) {
+//     sMax = arr[i];
+//   }
+// }
+// console.log(max, sMax);
+// let min = Infinity;
+// let sMin = Infinity;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] < min) {
+//     sMin = min;
+//     min = arr[i];
+//   } else if (arr[i] < sMin && min != arr[i]) {
+//     sMin = arr[i];
+//   }
+// }
+// console.log(min, sMin);
+
+// let arr = [1, 2, 3, 6, 5];
+// let sorted = true;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > arr[i + 1]) {
+//     sorted = false;
+//     break;
+//   }
+// }
+// console.log(sorted);
+
+// let arr = [1, 2, 3, 4, 5];
+// let temp = arr[0];
+// for (let i = 0; i < arr.length - 1; i++) {
+//   arr[i] = arr[i + 1];
+// }
+// arr[arr.length - 1] = temp;
+// console.log(arr);
+// let temp = arr[arr.length - 1];
+// for (let i = arr.length - 1; i >= 0; i--) {
+//   arr[i] = arr[i - 1];
+// }
+// arr[0] = temp;
+// console.log(arr);
+
+// let arr = [1, 2, 3, 4, 5];
+// let k = 2;
+// k = k % arr.length;
+// function reverse(arr, i, j) {
+//   while (i < j) {
+//     [arr[i], arr[j]] = [arr[j], arr[i]];
+//     i++;
+//     j--;
+//   }
+// }
+// reverse(arr, 0, k - 1);
+// reverse(arr, k, arr.length - 1);
+// reverse(arr, 0, arr.length - 1);
+// reverse(arr, k + 1, arr.length - 1);
+// reverse(arr, 0, k);
+// reverse(arr, 0, arr.length - 1);
+// console.log(arr);
